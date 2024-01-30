@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <!-- Site made with Mobirise Website Builder v5.9.6, https://mobirise.com -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.9.6, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/d20-128x128-1.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Gesture Commands</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <section data-bs-version="5.1" class="menu menu2 cid-tpEVJuebTP" once="menu" id="menu2-5o">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-primary display-7" href="index.html">Carlo Colizzi<br>Robotics Engineer</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" href="index.html#gallery5-11" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">My Works</a><div class="dropdown-menu" aria-labelledby="dropdown-704"><a class="text-black text-primary dropdown-item show display-4" href="BCI.html">BCI Controlled Prosthetics</a><div class="dropdown"><a class="text-black text-primary dropdown-item dropdown-toggle display-4" href="index.html#gallery5-11" data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Automatic Chess</a><div class="dropdown-menu dropdown-submenu" aria-labelledby="dropdown-696"><a class="text-black text-primary dropdown-item display-4" href="chess.html">Home</a><a class="text-black text-primary dropdown-item display-4" href="chess-timeline.html">Timeline</a><a class="text-black text-primary dropdown-item display-4" href="chess-subsystems.html">Subsystems<br></a></div></div><a class="text-black text-primary dropdown-item show display-4" href="nerf.html">Sentry Nerf Gun</a><a class="text-black text-primary dropdown-item show display-4" href="rover.html">Autonomous RC Car</a><a class="text-black text-primary dropdown-item show display-4" href="rocketry.html">Rocketry</a><a class="text-black text-primary dropdown-item show display-4" href="hacking-neato.html">Hacking a Neato</a><a class="text-black text-primary dropdown-item show display-4" href="neato-gestures.html">Neato Gesture Commands</a><a class="text-black text-primary dropdown-item show display-4" href="neato-particle-filter.html">Neato Particle Filter</a></div></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html#image1-b">About Me</a></li></ul>
+                
+                <div class="navbar-buttons mbr-section-btn"><a class="btn btn-black-outline display-4" href="index.html#form4-6">
+                        Contact</a></div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section data-bs-version="5.1" class="header10 cid-u2SYQqfBb5" id="header10-6i">
+
+    
+
+    
+    
+
+    <div class="align-center container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-9">
+                <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Gesture Control in ROS2</strong></h1>
+                
+                <div class="mbr-section-btn mt-3"><a class="btn btn-secondary display-4" href="https://github.com/Cbabe/Gesture_Commands">GitHub Repository</a></div>
+                <div class="image-wrap mt-4">
+                    <img src="assets/images/gestures-good1.gif" alt="Mobirise Website Builder" title="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-u2SZd6oOZ6" id="content4-6n">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Phase 1&nbsp;</strong></h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2SZ9Z840M" id="content5-6j">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    Our Idea</h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    We decided to implement a customizable hand gesture recognition control system. Hand gesture recognition is the process of determining hand shapes and movements in a video feed. We started by looking at other applications of hand gesture recognition, particularly in American Sign Language (ASL) recognition which has been heavily researched. But, we decided that we wanted to train our own gestures so we couldn’t really entirely rely on a pre-trained ASL recognition model. We looked into using OpenCV and while OpenCV had some libraries to support gesture recognition, we would have to implement much of the functionality we needed to support creating our own gestures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2SZbcaXch" id="content5-6k">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    Researching Tools</h4>
+                <p class="mbr-text mbr-fonts-style display-7">After adequate research on machine learning libraries, we decided to use MediaPipe. MediaPipe is a machine learning framework developed by Google that comes with pre-built functionalities for the identification and tracking of faces, eyes, hands, people, etc… Of these functions, we focused on the hand detection one and used the key points identified in the image (fingertips, 1st knuckles, 2nd knuckles, etc…) to define our gestures. An example of this can be the speed control, which uses MediaPipe to identify the tip of the thumb and index fingers, and then calculates the 3D distance between the two, making speed proportional to this last value. This allows us to regulate speed easily and intuitively, slowing down the neato when someone brings these two fingers together and picking up speed as they get further apart.<br><br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2SZbl791T" id="content5-6l">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">Training for Custom Gestures</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Once we got MediaPipe running, we needed to look into how to recognize specific gestures and not just hands in an image. We searched for machine learning algorithms trained to recognize gestures and found many, however, they were either already trained to pre-set gestures (peace sign, open palm, etc.) and we wanted to be able to create our own gestures that our program could recognize using the MediaPipe technology. Finally, we found a source that would allow us to train our own algorithm that could learn as many gestures as we wanted. We did have issues with getting this up and running though as we would run the training code provided but the detection program would recognize the new gestures. We soon found out that it was not capturing the new images and the image dataset was not updating. It turned out to be a file problem where the dataset file was incorrectly referenced in the training code and when we fixed this the new images were recorded in real-time and could then be used to retrain the machine. Once we were able to smoothly create custom gestures our program could detect (like the alien sign or the fist), we moved on to behaviors the robot would perform in response to seeing these gestures.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2SZbtF5HL" id="content5-6m">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">Performing the Behaviors</h4>
+                <p class="mbr-text mbr-fonts-style display-7">The first thing we did was tie simple behaviors like driving straight and turning to gestures like the thumbs up, peace sign, OK-sign, etc (as discussed in phase 2, we eventually changed these random gestures to a more intuitive number gestured system to control the Neato’s movements).<br>For driving in shapes (like circle, square, and triangle), we first used the time module. For example, to have the Neato drive in a triangle, we would have it drive straight for some amount of time (using the time.wait() command), turn for some amount of time that equates to turning 120 degrees, then driving straight again, repeating until a triangle is made. This method is not only very inconsistent, as depending on conditions like the floor the Neato may move different amounts in the same time, but it is also very time consuming as getting the right timing for angle turns and side lengths would take a decent amount of trial-and-error.<br>And so, we quickly pivoted to trying to use the Neato’s odom topic in order to have it more easily and consistently drive in shapes. With the utilization of the odom topic, we could simply tell the robot to turn until it reached the intended number of degrees and drive until it moved the intended distance. While it was a struggle at first to access the odom topic and to have the program dynamically change depending on the state of the robot’s pose, we did figure it out and were able to successfully have the robot drive in shapes.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content4 cid-u2T32OIVs1" id="content4-6o">
+    
+
+    
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-10">
+                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">
+                    <strong>Phase 2</strong></h3>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2T34UBo5n" id="content5-6p">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">Reconfiguring to Numbers</h4>
+                <p class="mbr-text mbr-fonts-style display-7">In order to lay the foundation for adding more features to our project, we decided to reconfigure the gestures the Neato understands to ones that are more intuitive and less random. We decided it would be most efficient to use numbers and associate them with the following behaviors:<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image4 cid-u2T3hBa3Xb" id="image4-6q">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/gestures-good1.gif" alt="Mobirise Website Builder">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4">
+                        Pointer Gesture</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/screenshot-2024-01-30-at-5.23.29-pm-1200x724.png" alt="Mobirise Website Builder">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4">Table of Gestures and Commands<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image4 cid-u2T3iKrtTC" id="image4-6r">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/square-good1.gif" alt="Mobirise Website Builder">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4">
+                        Square Gesture</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/triangle-good1.gif" alt="Mobirise Website Builder">
+                    <p class="mbr-text mbr-fonts-style mt-2 align-center display-4">
+                        Triangle Gesture</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="image2 cid-u2T3o4iLbF" id="image2-6t">
+    
+
+    
+    
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6">
+                <div class="image-wrapper">
+                    <img src="assets/images/pointing-good.gif" alt="Mobirise Website Builder">
+                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-4">
+                        Path Drawing</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg">
+                <div class="text-wrapper">
+                    <h3 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+                        Path Drawing</h3>
+                    <p class="mbr-text mbr-fonts-style display-7">Once we reached a stage in the project where the Minimum Viable Product had been developed, we started working on extensions. We decided to focus on the challenge of drawing custom paths for the Neato to follow. These paths would be “drawn” in the air by the hand giving the commands, read through the webcam and finally processed by the Neato. We believe this process can be divided into three smaller tasks: tracking the hand that draws the shape, recognising what shape this is, and converting this to an actionable path.<br>Starting with hand tracking, we identify the tip of the finger using MediaPipe and record all the positions of this element with time. Plotting all the locations on a single image will then allow us to essentially connect the dots and “trace” the path the finger has drawn and obtain the required shape.<br>Then we implement shape recognition, which is carried out using OpenCV contours function, and we take the path identified in the previous section and fit it to the closest matching shape. Currently, the shapes we can detect are circles, triangles, rectangles, and hexagons. This will ideally work similarly to Quickdraw! by Google or the shape recognition function on many note-taking apps, using AI to identify the shape. We are still working out how to effectively do this, whether we are tracking the pointer finger continuously and drawing lines between positions, or whether we use the pointer finger to set waypoints and then connect the waypoints.<br>Lastly, the conversion to an actionable path is done by pre-defining what path and actions correspond to what shape. Knowing that the user just drew a square for example, the program will execute its pre-written square-driving function using the odometry information discussed previously in Performing the Behaviors. This architecture of drawing predefined shapes graphically and recognizing them was our next-level goal, which we were not able to achieve successfully with the time we had. However with more time we have a clear idea of what our next steps would be.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2T3kFchVV" id="content5-6s">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">Next Steps</h4>
+                <p class="mbr-text mbr-fonts-style display-7">Instead of trying to track the exact movement of the fingertip used to draw and then running that shape through a recognition algorithm, we would use the waypoint method. We would still track the finger tip, but not continuously. When drawing, we would drop way points whenever the fingertip, and by extension the hand, paused for some short amount of time. For example, when drawing a triangle. A waypoint would be dropped as soon as the program recognizes the drawing gesture, then as the user draws the first side of the triangle and stops to change direction and draw the second side, the program drops another waypoint at that tip of the triangle because the hand stopped moving for a second or two to indicate a waypoint would be dropped. This process would be the same for any shape, for example when drawing a square we’d simply pause the needed time at every corner, and could also easily be extended to general paths like a line or a zig-zag pattern. The weakness of this method is that curves in shapes and paths wouldn’t be well recorded. So a circle, depending on how many waypoints one makes, could make the Neato actually move in a hexagon or octagon for example.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="content5 cid-u2T3qV8LYD" id="content5-6u">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>
+                    Conclusion</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">As a team and individuals we are very satisfied with our work. Our MVP was achieved and we all learned more about computer vision and algorithms as intended. Team goals were also met as communication was very good during this meeting and we were attentive about splitting work well and knowing when we needed to come together to work on something. While we would have liked to get the custom path drawing working, we were also able to figure out how to actually achieve that which is very satisfying, the issue was simply a lack of time.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-bs-version="5.1" class="footer7 cid-tpEVJv71Ea" once="footers" id="footer7-5q">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">Carlo Colizzi 2024 - Olin College of Engineering</p>
+            </div>
+        </div>
+    </div>
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2899369" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1" href="https://mobirise.com/html-editor.html">WYSIWYG HTML Editor</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  
+  
+</body>
+</html>
