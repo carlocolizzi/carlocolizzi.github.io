@@ -1,0 +1,55 @@
+1. Project Title & Summary
+Hacking a Neato
+Transformed a Neato vacuum into a versatile ROS-based robotics platform with teleoperation, autonomous path execution, wall following, and finite-state control.
+
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Teleop Success: Enabled WASD keyboard control with reliable start/stop functionality.
+Autonomous Behaviors: Implemented wall following and obstacle avoidance that navigated corners and avoided collisions in simulated environments.
+Finite-State Machine: Combined multiple behaviors (object following, wall following) with dynamic switching based on sensor inputs.
+3. Problem Statement
+The goal was to expand the Neato’s functionality beyond basic teleoperation. This included:
+
+Building a robust keyboard control interface.
+Programming simple autonomous behaviors (drive in a square).
+Developing advanced features like wall following, person/object following, and obstacle avoidance.
+Integrating these features under a finite-state machine for seamless behavior switching.
+4. Role & Responsibilities
+Teleoperation Development: Created a WASD control scheme to move the Neato forward, backward, and rotate left/right, ensuring it could stop reliably.
+Algorithm & Code Implementation: Wrote and tested scripts in ROS (Robot Operating System) for square-driving, wall following, person/object detection, and obstacle avoidance.
+Behavior Coordination: Combined multiple algorithms into a finite-state machine that switched between teleop, following, and wall-navigation states based on sensor data.
+5. Tools & Technologies Used
+ROS (Robot Operating System): Published and subscribed to topics for sensor data and velocity commands.
+Neato’s Laser Scan & Odometry: Interpreted LIDAR data for wall/person detection, used odometry for position/heading updates.
+PID Controllers: Implemented proportional-integral-derivative control (via simple-pid library) for steering and speed regulation in wall-following and object-following behaviors.
+Python: Primary language for writing control and state machine scripts.
+GitHub Repo: Hosted code for collaboration and version control.
+6. Challenges & Solutions
+Stopping in Teleop: The Neato continued moving if keys were released.
+Solution: Added a dedicated “stop” command on any non-WASD key press.
+Square Driving Accuracy: Turns overlapped forward movement, causing drifting.
+Solution: Inserted “stop” commands and short delays to ensure each movement completed before the next began.
+Wall Following Consistency: Maintaining a constant 1m distance on corners and uneven walls.
+Solution: Employed a PID controller on the LIDAR data, constantly adjusting steering to match the target distance.
+Object Detection & Following: Needed a robust way to identify and track an object in a sparse environment.
+Solution: Filtered laser scans for non-infinite distances, calculated a centroid, and used heading/distance PID loops to pursue the target.
+Obstacle Avoidance Vectoring: Combining goal direction, obstacle repulsion, and current odometry was non-trivial.
+Solution: Weighted vectors inversely to obstacle distance and summed them with the main navigation vector, steering away from hazards.
+7. Results & Impact
+Reliable Teleop: Seamless keyboard-based control improved user confidence and command responsiveness.
+Autonomous Behaviors: Demonstrated consistent wall following, stable “drive in a square,” robust object following, and obstacle avoidance in simulation.
+Finite-State Integration: Showcased how multiple navigation behaviors can coexist and switch automatically based on real-time sensor input, paving the way for more complex tasks (e.g., patrolling, pick-and-place).
+8. Collaboration & Stakeholders
+Student Team: Collaborated to write, test, and refine Python scripts.
+ROS Community: Leveraged open-source packages (teleop_twist_key, simple-pid) and documentation.
+Potential Users: Future robotics students/researchers interested in foundational navigation algorithms for low-cost platforms.
+9. Key Takeaways & Learnings
+Modular Design: Splitting tasks (teleop, wall following, object following) into separate, testable nodes made debugging easier.
+PID Tuning: Highlights the impact of correct PID gains to avoid oscillations and ensure smooth operation.
+Finite-State Control: Demonstrated how structured logic can unify distinct behaviors under one robotic system.
+ROS Proficiency: Reinforced best practices for topic publishing/subscribing and node-based design.
+10. Future Improvements & Next Steps
+Real-World Testing: Transition from simulation to a physical Neato for more robust sensor handling (noise, drift, real obstacles).
+Advanced Object Recognition: Use computer vision or machine learning to identify different types of objects rather than naive scan-based methods.
+Multi-Robot Collaboration: Expand the system for cooperative tasks, possibly sharing sensor data or dividing objectives among multiple Neatos.
+Extended Autonomy: Integrate path planning algorithms (e.g., SLAM, A*) for more complex environments and routes.

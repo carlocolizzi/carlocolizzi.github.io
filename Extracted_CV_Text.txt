@@ -1,0 +1,86 @@
+
+Carlo Umberto Colizzi  
+Milano, IT, +39 329 285-6281, carlo@colizzi.net  
+
+---
+
+EDUCATION
+
+Bachelor of Science in Engineering, Olin College of Engineering  
+Sep 2020 — May 2024, Boston, US  
+Major: Robotics, Minor: Entrepreneurship  
+GPA: 3.82/4  
+
+Mechanical Engineering, University College London  
+Jan 2023 — Jun 2023, London, UK  
+Exchange student during the 6th semester  
+Modules Taken: Competitive Strategy, Biomechanics, Game Theory, Materials Science  
+
+International Baccalaureate Diploma Programme, St. Louis School  
+Sep 2018 — May 2020, Milano, IT  
+Grade Obtained: 42/45 – HL Subjects: Physics (7), Mathematics (7), Computer Science (6)
+
+---
+
+PROFESSIONAL EXPERIENCES
+
+Business Analyst Intern, Deloitte Value Creation Services  
+Sep 2024 – Present, Milano, IT  
+Driving revenue growth, profitability enhancement, and sustainable value creation for corporates and private equity clients. Expertise spans deal advisory, business transformation, and turnaround strategies, with a focus on:
+- Deal Support: Commercial and operational due diligence, synergy assessment, integration, and carve-outs  
+- Business Transformation: Value creation plans, strategic blueprints, top-line acceleration, and cost optimization  
+- Turnaround and Exit Strategies: Restructuring plans, exit readiness, and vendor due diligence  
+
+Sectors of focus include consumer and retail, automotive, fashion and luxury, and yachting  
+
+Engineering Consultant, SparkCharge  
+Sep 2023 — May 2024, Boston, US  
+- Worked as part of SCOPE (Senior Capstone Program in Engineering) at Olin College for a growing startup  
+- Led the team as Project Manager, overseeing financial planning and resource allocation for project deliverables  
+- Developed and implemented cost-effective waterproofing solutions, improving product durability  
+- Engineered prototype solutions to reduce noise levels, enhancing marketability and increasing product value  
+- Designed scalable manufacturing and assembly processes, focusing on cost reduction and efficiency improvements  
+
+Associate Consultant Intern, Bain & Company  
+Jun 2023 — Aug 2023, Milano, IT  
+- Participated in the evaluation/negotiation of Swisscom’s €8bn acquisition of Vodafone Italia, assessing viability, risks, and synergies  
+- Conducted due diligence on two key commercial vendors as part of M&A transactions. Developed comprehensive due diligence frameworks, performed financial analysis, and evaluated vendor performance  
+- Engaged with client C-Suite to present findings and strategic recommendations  
+
+Cloud Development Intern, Engineering Ingegneria Informatica S.p.A.  
+May 2022 — Jun 2022, Milano, IT  
+- Engineering is a PE-owned, global IT consulting company specializing in digital transformation, software solutions, and IT innovation  
+- Worked on the development of DE4BIOS, a COVID tracker for the Italian government, and personnel management tool for a private client  
+- Wrote code to create and manage cloud infrastructure in Terraform, optimizing operational costs  
+- Created and managed cloud infrastructure using AWS, ensuring data security and compliance with regulations  
+
+Supply Chain Intern, Blackshape S.p.A.  
+May 2021 — Jun 2021, Monopoli, IT  
+- Blackshape is a globally recognized leader in designing and producing premium, full composite, ultra-light aircraft for civil and military use  
+- Designed an automated assembly line for the main body of the aircraft, focusing on cost optimization and material efficiency  
+- Identified and defined costs, materials, and layouts to streamline the supply chain and reduce overheads  
+
+---
+
+SUMMER COURSES AND CERTIFICATIONS
+
+ESAP: Nanotechnology, University of Pennsylvania  
+Jul 2018 — Jul 2018, Philadelphia, US  
+
+Robotics and C++, ID Tech at MIT  
+Jul 2017 — Jul 2017, Boston, US  
+
+---
+
+LANGUAGES
+
+- Italian: Native speaker  
+- Spanish: Working knowledge  
+- English: Native speaker  
+
+---
+
+SKILLS
+
+- Microsoft Excel | Python | C++ | Fusion 360 | Solidworks | AWS | Kubernetes | CATIA | MATLAB | SQL | Git | HTML/CSS | Linux  
+- Microsoft PowerPoint | Tableau | Alteryx | Power BI  

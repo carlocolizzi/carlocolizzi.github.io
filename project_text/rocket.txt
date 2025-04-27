@@ -1,0 +1,44 @@
+1. Project Title & Summary
+Olin Rocketry Team Reaches 10,000 ft
+A student-led initiative at Olin College that successfully launched a high-powered rocket to 10,000 feet on May 15, 2021, despite COVID-19-related challenges.
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Altitude Milestone: Achieved a high-powered launch of ~10,000 ft.
+Engine Certifications: Operated two different engines (Aerotech L875 and Aerotech M1350) in a single day.
+Team Collaboration: Twelve student members, from first-year to graduating seniors, contributed to design and launch.
+3. Problem Statement
+Goal: Attain a 10,000 ft flight—a stepping stone for future higher-altitude goals, including 30,000 ft.
+Context: COVID-19 restrictions canceled competitions and limited in-person collaboration, jeopardizing the team’s ability to meet this milestone.
+4. Your Role & Responsibilities
+Structures & Assembly Team:
+Rocket Airframe Design: Shaped the rocket’s body to optimize aerodynamics, distribute internal pressure, and handle flight stresses.
+Weight & Pressure Distribution: Calculated and fine-tuned the rocket’s center of gravity (CG) and center of pressure (CP) to ensure stable flight.
+Hands-On Building: Oversaw assembly of core components, addressing alignment and structural integrity to meet safety and performance goals.
+5. Tools & Technologies Used
+Engines: Aerotech L875 and M1350.
+Structural Design & Analysis: Employed methods to ensure stable CG/CP alignment and withstand high-power launches.
+Remote Collaboration: Used Zoom and other online tools for design sessions and real-time decision-making with teammates.
+Safety & Certification: Supervised by an L3-certified mentor, with additional team members holding L2 certifications.
+6. Challenges & Solutions
+COVID-19 Restrictions: Minimal in-person build windows.
+Solution: Adopted a hybrid approach—remote design reviews, smaller on-campus build teams.
+Fitting & Stability: Ensuring the engine fit properly and balancing overall mass to stay near 10,000 ft without overshooting.
+Solution: Refined the internal structure and added/removed weight at the launch site as needed for safe, accurate flight.
+Logistics & Safety: Coordinating safe travel to Vermont around final exams and graduation schedules.
+Solution: Followed strict COVID protocols, scheduled the launch date to accommodate flights and commencement ceremonies.
+7. Results & Impact
+Successful Launch: Confirmed rocket stability at 10,000 ft, validating the aerodynamic design and weight/pressure calculations.
+Dual Engine Tests: Demonstrated versatility by flying two types of high-powered motors.
+Team-Wide Engagement: Enabled remote viewers to watch via livestream, uniting teammates, mentors, and families.
+8. Collaboration & Stakeholders
+Student Team: Twelve members across multiple class years; some meeting in person for the first time on launch weekend.
+Mentors: Olin alum Jake Felser ’11 and L3-certified mentor Curtis Heisey, ensuring compliance with high-powered rocketry regulations.
+Olin Community: Provided space and support for both remote and on-campus efforts.
+9. Key Takeaways & Learnings
+Aerodynamic & Structural Mastery: Practical experience designing rocket shapes for optimal flight, managing CG/CP alignment, and mitigating internal pressure stresses.
+Adaptability Under Constraints: Persevered through canceled competitions, remote teamwork, and last-minute adjustments.
+Importance of Mentorship: Gained insights into safety protocols and certification standards crucial for high-powered launches.
+10. Future Improvements & Next Steps
+Higher Altitudes: Aim for 10,000 ft again in competition, then expand to 30,000 ft with in-house engine development.
+Refined Processes: Improve assembly and balancing procedures for quicker, more reliable integration of rocket components.
+Team Growth & Training: Recruit and mentor new members to sustain and advance Olin Rocketry’s capabilities.

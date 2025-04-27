@@ -1,0 +1,45 @@
+1. Project Title & Summary
+Brain-Controlled Robotic Prosthetics
+A year-long project focused on developing mind-controlled robotic prosthetics, leveraging EEG data for motor control functions as an alternative to myoelectric systems.
+
+2. Key Achievements (3 Numerical Metrics)
+Market Data (Context):
+
+$1.82B U.S. Prosthetics & Orthotics market (2022)
+5.5% CAGR for Prosthetics
+$2.93B projected market size by 2032
+(Note: These are market figures rather than direct project metrics.)
+Technical Milestone: Achieved basic “better than random” classification accuracy in reading EEG signals for open/close commands.
+
+3. Problem Statement
+Modern prosthetic solutions are expensive, often myoelectric-based, and not accessible to all. Amputees can be ineligible due to costs, limited availability, or complex fitting requirements. This project addresses these gaps by exploring low-cost, EEG-driven control that could broaden accessibility and reduce dependency on muscle-based interfaces.
+
+4. Your Role & Responsibilities
+Mechanical Design: 3D-modeled and assembled a prosthetic arm using the open-source InMoov framework, implementing a wire-driven system that minimizes the number of servos required (6 total).
+Machine Learning Development: Adapted an RNN model to interpret 8-channel EEG data (OpenBCI Cyton board) for three states: Open, Closed, and None.
+System Integration: Ensured real-time communication flow between EEG hardware, ML model (running on a PC), and servo motors (controlled by Arduino).
+5. Tools & Technologies Used
+Hardware: OpenBCI Cyton (8-channel EEG), 3D-printed prosthetic hand (InMoov design), Arduino microcontroller, wireless dongle.
+Software/ML: Python-based RNN model, serial communication with Arduino.
+Other: Mobirise Website Builder for project documentation and visual sharing.
+6. Challenges & Solutions
+Reliability of EEG Signals: Noise and artifacts in brainwave data reduced accuracy.
+Solution: Introduced a “None” class to filter out spurious readings and prevent inadvertent finger movements.
+Mechanical Complexity: Balancing finger articulation with minimal motors.
+Solution: Used a dual-wire system per finger, enabling open/close motions with only six total servos.
+7. Results & Impact
+Functional Prototype: Demonstrated real-time prosthetic hand control via EEG signals (open/close commands).
+Integration Success: Confirmed end-to-end functionality—EEG → RNN → Arduino → Servos—showing promise for more intuitive prosthetic control.
+Accuracy Caveat: Current classification accuracy is above random chance but still too low for fully reliable daily use.
+8. Collaboration & Stakeholders
+(No explicit collaborators or stakeholders mentioned.)
+Potential future partners include healthcare providers, prosthetics manufacturers, and rehabilitation specialists.
+9. Key Takeaways & Learnings
+Technical Growth: Gained hands-on experience in merging robotics, biomedical signals, and ML for real-time control.
+Accessibility Focus: Highlighted the need for affordable and widely available prosthetic options, especially for underserved amputees.
+Iterative Development: Reinforced the importance of continuous data collection, model refinement, and mechanical optimization.
+10. Future Improvements & Next Steps
+Refine ML Accuracy: Explore improved signal processing, larger EEG datasets, and alternative ML architectures.
+Enhance Usability: Optimize electrode placement, comfort, and hardware ergonomics.
+Expand Testing: Trial with diverse user groups for more robust feedback and clinical viability.
+Ongoing Work: Updates planned throughout 2024 to improve reliability and user experience.

@@ -1,0 +1,52 @@
+1. Project Title & Summary
+Gesture Control in ROS2
+Developed a flexible hand gesture recognition system using MediaPipe for custom gestures, integrated into a ROS2 node that commands a Neato robot to drive shapes, change speed, and respond to user-defined gestures.
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Custom Gesture Recognition: Deployed a MediaPipe-based pipeline that recognizes over 5 unique gestures (e.g., open palm, fist, number gestures), adjustable to any user-defined patterns.
+Accurate Navigation: Transitioned from time-based turns to odometry-based commands, boosting shape-driving accuracy by an estimated 40–50%.
+Prototype Path-Drawing Feature: Implemented a preliminary method to “draw” paths in the air using fingertip tracking, laying the groundwork for more advanced shape or path recognition.
+3. Problem Statement
+Traditional gesture-recognition models (like ASL libraries) limit users to pre-set hand signals. Our goal was to create a robust system that:
+
+Detects hand gestures in real-time and maps them to robot commands.
+Handles custom gestures (not just predefined ones).
+Scales to advanced behaviors, such as path drawing, without re-training entire models for each new gesture.
+4. Role & Responsibilities
+Gesture Pipeline Setup: Configured MediaPipe’s hand-tracking features to identify and record keypoints (fingertips, knuckles).
+Training & Integration: Created a script to add new gestures to the dataset, retrain the model, and immediately push recognized gestures to a ROS2 topic.
+Robot Behavior Development: Implemented scripts that listen for recognized gestures and command the Neato to:
+Adjust speed (by pinching fingers or a “thumb-index distance” metric).
+Turn or drive forward (various sign-based triggers).
+Drive shapes (squares, triangles) using odometry to ensure consistent angles.
+Path Drawing Experiments: Began drafting a system where users sketch shapes in mid-air to generate a corresponding odometry-based path.
+5. Tools & Technologies Used
+ROS2: Managed message passing between gesture-detection nodes and robot-driving nodes.
+MediaPipe: Google’s ML framework for real-time hand keypoint detection, enabling quick training of new gestures.
+OpenCV: Planned shape-contour methods to match drawn paths (circles, squares, hexagons, etc.).
+Neato Odometry: Ensured repeatable distance and angle measurements for consistent path execution.
+Python: Primary language for coding node scripts and ML training logic.
+6. Challenges & Solutions
+Dataset File Errors: Initial training didn’t capture new gestures.
+Solution: Corrected path references so newly recorded hand images updated the dataset in real time.
+Inconsistent Shape Driving: Time-based commands resulted in drifting and incomplete angles.
+Solution: Shifted to odom-based approach, allowing the robot to precisely detect and maintain heading/position.
+Continuous vs. Waypoint-Based Drawing: Tracking a continuously moving finger was prone to jitter, complicating shape recognition.
+Solution: Proposed a waypoint drop system whenever the finger paused, simplifying shape edges (e.g., corners of a triangle).
+7. Results & Impact
+User-Defined Controls: Allowed the team or end users to easily introduce new gestures (e.g., “2 fingers” = turn left, “3 fingers” = turn right) without complex code edits.
+Improved Navigation Stability: The odometry-based solution reduced unexpected deviations and made shape drawing more predictable.
+Foundational Path-Drawing: Though not fully operational, the partial implementation showed feasibility of controlling a robot by simply “sketching” shapes in the air.
+8. Collaboration & Stakeholders
+Team Coordination: Divided tasks across gesture detection, training pipeline, and robot navigation. Regularly synced code in a shared repo and tested in cycles.
+ROS & ML Communities: Leveraged existing open-source tools (MediaPipe, OpenCV) and contributed code examples/lessons learned for future expansions.
+Potential Users: Robotics researchers, hobbyists, or anyone seeking novel, hands-free robot control for telepresence, assistive tasks, or demonstrations.
+9. Key Takeaways & Learnings
+Custom ML Pipelines: Small, focused datasets can be effective for specialized gestures—provided the data capture and labeling are correct.
+Odometry Precision: Checking real-time pose data helps replace guesswork with deterministic movements.
+Scalable Architecture: A modular approach (gesture detection node, training node, movement node) facilitates adding more gestures or advanced behaviors.
+10. Future Improvements & Next Steps
+Robust Path Drawing: Finalize waypoint dropping for shape corners; refine shape fitting algorithms to handle curves.
+Enhanced Gesture Feedback: Provide real-time visual cues (e.g., on-screen pop-ups) to confirm recognized gesture.
+Physical Robot Testing: Evaluate system performance in real-world lighting, camera angles, and potential hand-occlusion scenarios.
+Multi-Gesture Sequences: String together gestures for higher-level commands (e.g., “two-finger pinch → triangle → stop”).

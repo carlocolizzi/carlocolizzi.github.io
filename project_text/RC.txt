@@ -1,0 +1,63 @@
+1. Project Title & Summary
+Autonomous RC Rover
+A four-week project at Olin College where a rover was designed to autonomously complete three outdoor missions: navigating a “wasteland,” docking at a station, and performing a payload drop.
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Three Completed Missions: Demonstrated semi-autonomous navigation, docking, and payload drop around the Olin oval.
+Multi-Sensor Integration: Integrated 8+ sensors (5 IR, 2 Sonar, 1 PiCam) for guidance and obstacle detection.
+Multi-Subteam Coordination: Three specialized subteams (Mechanical, Electrical, Software) collaborated for a unified functional demo.
+(No direct performance metrics such as speed, accuracy percentages, or distances saved were provided.)
+
+3. Problem Statement
+The project aimed to create a rover capable of outdoor autonomy—detecting obstacles, following walls, recognizing April Tags, and delivering/picking up payloads. By integrating mechanical, electrical, and software elements, the team sought a robust demonstration of multi-mission functionality under real-world conditions (variable terrain, Wi-Fi connectivity issues, and potential sensor interference).
+
+4. Your Role & Responsibilities
+Mechanical Design & Fabrication:
+Constructed the rover body using Sentra board.
+Designed a payload claw with a servo-actuated gripper.
+Implemented a “sensor suite” with five IR sensors, two sonar sensors, and a pan/tilt PiCam mount.
+Coordinated mechanical assembly and ensured adequate space for electronics and future modifications.
+Software Contributions:
+Assisted in April Tag detection (OpenCV) and sensor integration code.
+Developed logic for docking maneuvers and payload dropping.
+Helped debug multiple autonomous behaviors (e.g., wall-following, path-finding).
+(Team Members: Jeremy Wenger, Olivia Dawes, Esme Abbott, Shamama Sirroon, Jaclyn Ho.)
+
+5. Tools & Technologies Used
+Mechanical:
+Sentra board for main chassis and sensor suite.
+3D-printed claw with servo-driven interlocking gears.
+Custom pan/tilt turret for PiCam and Sonar.
+Electrical:
+Two power circuits (logic vs. motors).
+Raspberry Pi (core logic & computer vision).
+PiHAT & Qwiic boards for sensor management (IR & Sonar).
+Electronic Speed Controller (ESC) for motor control; E-Stop for safety.
+Software/Control:
+Python + OpenCV for face/April Tag detection and color masking.
+Hardcoded transitions + wall-following using IR and Sonar.
+PD controllers for steering corrections and velocity control.
+Wi-Fi-based remote debugging and partial teleoperation.
+6. Challenges & Solutions
+Wi-Fi Disruptions: Rover’s Raspberry Pi lost connection when switching routers on campus.
+Solution: Manually restarted or “readjusted” the rover; considered running code fully onboard to reduce reliance on live Wi-Fi.
+Burned-Out Steering Servo: Required last-minute recalibration of motor/steering parameters.
+Solution: Replaced servo and quickly retuned the rover’s turning behavior.
+Initial Positioning: Hard to determine the rover’s starting orientation for purely autonomous navigation.
+Solution: Implemented “hardcoded” approach phases before more sophisticated sensor-based behaviors took over.
+7. Results & Impact
+Functional Multi-Mission Rover: Demonstrated ability to sense walls/curbs, locate/dock at stations via April Tags, and release payloads autonomously.
+Partially Autonomous Demo: Missions ran with minimal manual intervention except for occasional resets due to Wi-Fi issues and minor obstructions.
+Robust Design & Learning: Emphasized mechanical-electrical-software integration within a tight timeline, yielding strong practical insights and a working prototype.
+8. Collaboration & Stakeholders
+Internal Team: Five students split into sub-teams (Mechanical, Electrical, Software) who shared progress and pivoted roles as tasks finished.
+(No external sponsors or industry stakeholders mentioned.)
+9. Key Takeaways & Learnings
+Full-Stack Integration: Hands-on experience coordinating mechanical design, sensor wiring, and real-time software logic.
+Adaptability: Quick pivot when the steering servo failed and creative solutions to intermittent Wi-Fi interruptions.
+Autonomy Complexity: Purely autonomous outdoor navigation is challenging; sensor calibration, real-time feedback, and robust code structure are vital.
+10. Future Improvements & Next Steps
+Run Code Onboard: Minimize Wi-Fi dependencies by running all software directly on the rover (or local Pi storage).
+Enhanced Localization: Add odometry or GPS to reduce reliance on “hardcoded” maneuvers.
+Refined Payload System: Extend claw functionality for payload retrieval (not just dropping).
+Increased Autonomy: Further polish sensor fusion, pathfinding algorithms, and error handling to achieve fully hands-off operation.

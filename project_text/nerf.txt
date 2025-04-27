@@ -1,0 +1,49 @@
+1. Project Title & Summary
+Sentry Nerf Gun
+A project integrating mechanical, electrical, and software systems to build a color- or face-tracking Nerf turret with real-time aiming and firing capabilities.
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Two Tracking Modes: Color-based detection (red objects) and face detection using OpenCV.
+Custom Pan/Tilt Mechanism: Powered by 2 NEMA-17 stepper motors with a crossed-roller bearing for smooth, load-bearing rotation.
+Unified Control: All actuators (stepper motors, relay, servo) driven by a single microcontroller (Raspberry Pi Pico) via USB serial.
+(No explicit project performance metrics were provided, so these achievements highlight core technical successes.)
+
+3. Problem Statement
+The team aimed to create a mobile sentry gun that autonomously detects, tracks, and fires Nerf darts at targets—whether a specific color or a human face. This involved combining computer vision with a mechanical turret system to achieve real-time aiming and firing, plus an initial plan to mount it on a Neato robot vacuum for autonomous movement.
+
+4. Your Role & Responsibilities
+(No explicit individual roles described; appears to be a collective team project.)
+Overall contributions included mechanical design, 3D printing, electrical wiring, control systems, and computer vision implementation with Python and OpenCV.
+5. Tools & Technologies Used
+Mechanical: 3D-printed turret with crossed-roller bearing, Nerf Stryfe gun with minimal permanent modifications.
+Electrical:
+Two NEMA-17 stepper motors for pan/tilt
+A relay to power the flywheel motors
+One servo to pull the trigger
+Raspberry Pi Pico running CircuitPython for actuator control
+Software/Computer Vision:
+OpenCV for color masking & face detection
+PD controllers for aiming precision
+Serial communication via USB to integrate with the turret controls.
+6. Challenges & Solutions
+Multiple Face Detections: OpenCV often detected spurious “faces” in the background.
+Solution: Imposed a size threshold so only sufficiently large “faces” were tracked, ignoring smaller false positives.
+Integration with ROS & Neato Vacuum: Attempting to run face/color recognition code on a Raspberry Pi while interfacing with ROS proved cumbersome.
+Solution: Abandoned the Neato and ROS integration mid-project, consolidating everything into one codebase for direct turret control.
+Smooth Movement: Coordinating two stepper motors simultaneously for diagonal aiming.
+Solution: Employed a PD controller with specific gains (Kp = -0.001, Kd = 0.0001) and an async I/O library to generate clean, coordinated PWM signals.
+7. Results & Impact
+Functional Turret Prototype: Successfully tracked colored objects or faces, aimed, and fired Nerf darts in real time.
+Mechanical-Electrical Integration: The pan/tilt system and minimal modifications to the Nerf gun allowed for reliable actuation via one servo (trigger pull) and a relay (flywheel motors).
+Partial Autonomy: While the Neato vacuum aspect was dropped, the turret itself demonstrated effective semi-autonomous operation.
+8. Collaboration & Stakeholders
+Project Team: Gabby Blake, Ben Grant, and you (collective design, coding, and testing).
+(No additional external stakeholders or partnerships mentioned.)
+9. Key Takeaways & Learnings
+Concurrency & Control: Async I/O in Python significantly improved simultaneous stepper motor control, reducing jitter and allowing smooth diagonal movements.
+Realistic Scoping: Integrating mechanical, electrical, and software components can be more complex than anticipated; carefully balancing ambition and feasibility is crucial.
+Hands-On Innovation: A more challenging project yielded greater learning outcomes, especially around debugging complex systems and refining control algorithms.
+10. Future Improvements & Next Steps
+Neato Robot Integration: Revive the plan to mount the turret on a mobile base and utilize ROS for full autonomy.
+More Robust Face Detection: Further refine OpenCV parameters or explore alternative ML methods to reduce false positives.
+Standalone Operation: Optimize code (e.g., multi-threading, overclocking) so it can run solely on a Raspberry Pi without requiring a laptop.

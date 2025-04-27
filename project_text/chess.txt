@@ -1,0 +1,46 @@
+1. Project Title & Summary
+Automatic Chess
+A single-player chess board that lets users play against an AI opponent. The AI’s pieces move autonomously via an under-board gantry system, while the player’s manual moves are detected by hall-effect sensors and transmitted to the AI.
+
+2. Key Achievements (3 Numerical/Notable Metrics)
+Fully Automated AI Movement: Deployed a mobile electromagnet on a 2-axis gantry to reposition the AI’s pieces with minimal user interference.
+Real-Time Move Detection: Integrated an 8×8 grid of hall-effect sensors to track piece locations, ensuring accurate updates to the AI’s game state.
+Robust Chess Logic: Leveraged Stockfish 14.1 (via the Python Chess Library) to validate moves, generate AI responses, and manage special rules (e.g., captures, checkmates).
+3. Problem Statement
+Traditional digital chess sets either lack physical movement of AI pieces or rely on purely electronic interfaces (e.g., screens). This project aimed to deliver a lifelike chess experience: a standard-size board with physical AI-controlled pieces and automated game logic so a user can train and play without needing another human opponent.
+
+4. Role & Responsibilities
+Mechanical Design: Created a two-axis gantry powered by stepper motors and an electromagnet to move pieces below the board.
+Sensors & Electronics: Developed a hall-effect sensor matrix and multiplexer system to detect piece movement.
+Software & AI Integration: Implemented Python classes (using Python Chess, Stockfish engine) to manage game flow, communicate moves, and control the Arduinos for motor and sensor operations.
+5. Tools & Technologies Used
+Gantry System: Two NEMA 17 stepper motors, A4988 drivers, threaded rods, and 3D-printed mounts for precision.
+Chess AI: Stockfish 14.1 engine interfaced via Python Chess and UCI (Universal Chess Interface) protocol.
+Sensor Matrix: An 8×8 array of A3144 hall-effect sensors read through two CD4051BE multiplexers/decoders.
+Arduinos: One for controlling steppers and the electromagnet, another for scanning the sensor matrix and reporting the states over serial.
+PCB & Prototyping: A custom printed circuit board for the hall sensors, plus iterative hand-soldered prototypes (e.g., 2×2 test array).
+6. Challenges & Solutions
+Gantry Reliability: Frequent mechanical or electrical issues (e.g., motor stalling, misalignment) caused inconsistent piece movements.
+Solution: Tuned stepper acceleration, replaced faulty drivers, adjusted rod lengths, and updated motor control software.
+LED Feature Removal: Attempted to install 64 LEDs under each square to guide novice moves, but faced wiring and manufacturing errors.
+Solution: Dropped the LED feature to focus on core functionality due to time constraints and PCB design complexity.
+Accurate Move Detection: Handling piece pick-up/set-down in a reliable way for captures and normal moves.
+Solution: The MoveSensor class tracked changes in the sensor matrix (old vs. new states) to interpret piece lifts, placements, and captures.
+7. Results & Impact
+Autonomous Board: Successfully demonstrated a single-player chess set where the AI physically moves its pieces, boosting immersion and offering hands-on practice.
+Customizable Architecture: The Python-driven design allows easy modifications, e.g., changing AI difficulty or adding specialized features.
+Realistic Gameplay: Standard 20×20″ playing field ensures familiar spacing for seasoned or novice players, while maintaining standard chess movement logic.
+8. Collaboration & Stakeholders
+Project Team: Split into mechanical (gantry, board design), software (AI, sensors, motor control), and electrical (PCBs, hall-effect wiring) sub-teams.
+Chess & Robotics Enthusiasts: Potential users looking for a more tactile alternative to purely digital chess, or advanced robotics/hobby projects.
+Open-Source Community: Code references, PCB designs, and 3D-printed part files could inform future automated board games or robot arms.
+9. Key Takeaways & Learnings
+Interdisciplinary Integration: Merging mechanical design, electronics, and AI-driven software requires careful testing and iteration.
+Constraint-Driven Design: Time, budget, and hardware complexities (64 sensors, large PCBs) forced trade-offs (e.g., dropping LED guidance).
+Chess Logic & AI: Off-the-shelf libraries like Python Chess and Stockfish expedite development by providing robust game validation.
+10. Future Improvements & Next Steps
+Refined Gantry Control: Investigate belts or alternative linear motion (e.g., rack-and-pinion) for smoother piece movement.
+Reintroduce LEDs: Simplify the LED matrix approach (smaller PCBs or addressable LED strips) to assist learning players.
+Enhanced User Interface: Add an LCD/GUI to display AI move prompts or game status.
+Expand Sensor Logic: Handle edge cases like castling and en passant through advanced sensor analysis or additional piece-lift heuristics.
+Remote Connectivity: Incorporate Wi-Fi or Bluetooth to allow online AI or remote opponent matches with local piece movement.
