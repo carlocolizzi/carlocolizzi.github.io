@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tricycle Protocol - Carlo Colizzi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/roobert" rel="stylesheet">
+</head>
+<body>
+    <!-- Header placeholder -->
+    <div id="header-placeholder"></div>
+
+    <main class="case-study-page">
+        <!-- Hero Section -->
+        <section class="case-study-hero">
+            <div class="container">
+                <div class="case-study-intro">
+                    <div class="case-study-meta">
+                        <span class="case-study-year">2025</span>
+                        <span class="case-study-category">DeFi & Blockchain Protocol</span>
+                    </div>
+                    <h1>WIP:Tricycle Protocol</h1>
+                    <p class="case-study-description">A matchmaking platform that connects BUN owners and GOLD investors within the Sanko Pets ecosystem, automating farming processes and distributing profits through smart contracts.</p>
+                    <div class="github-container">
+                        <a href="https://tricycle-theta.vercel.app/docs" target="_blank" class="github-button">
+                            <i class="fas fa-external-link-alt"></i>
+                            View Protocol
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section class="case-study-overview">
+            <div class="container">
+                <div class="overview-grid">
+                    <div class="overview-item">
+                        <h3>Staking Period</h3>
+                        <div class="stat">37 Days</div>
+                        <p>Automated farming cycle duration</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Protocol Fee</h3>
+                        <div class="stat">20%</div>
+                        <p>Of farming profits retained by protocol</p>
+                    </div>
+                    <div class="overview-item">
+                        <h3>Minimum Stake</h3>
+                        <div class="stat">~20%</div>
+                        <p>Of on platform farming requirement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>The Sanko Pets ecosystem presents unique challenges for users looking to maximize their returns from farming activities. BUN owners often lack the time to manage the complex farming process, while GOLD investors seek profitable opportunities but may not own the necessary BUNs to participate in farming activities.</p>
+                        <p>Traditional farming in the Sanko ecosystem requires constant attention, manual seed planting, BUN management, and harvest timing. This creates barriers for users who want to participate but cannot dedicate the time required for optimal farming operations. Additionally, the high initial investment required for both BUNs and GOLD creates accessibility issues for many potential participants.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/tricycle.png" alt="Tricycle Protocol" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Tricycle Landing Page</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>Tricycle Protocol addresses these challenges by creating a peer-to-peer platform that connects two distinct user types within the Sanko Pets ecosystem. BUN owners who prefer not to manage farming processes can stake their NFTs, while GOLD investors can provide the necessary capital for farming operations.</p>
+                        <p>The protocol automates the entire farming cycle through smart contracts, managing everything from seed purchasing and planting to harvest collection and profit distribution. Users can stake individual assets (either BUNs or GOLD) and wait for counterparties to complete the farming pair, or stake both assets together to use the protocol solely for automation purposes.</p>
+                        <p>Once a contract is completed with the required counterpart, assets are automatically locked for a 37-day staking period. During this time, users accrue interest in GOLD with a dynamic APY that adjusts based on the current value of staked assets relative to total farming costs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Implementation Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>The Tricycle Protocol operates through a sophisticated algorithm that manages all farming processes automatically. When a user stakes their BUN or GOLD on the platform, a new smart contract is created and remains open until another user provides the missing counterpart asset.</p>
+                        <p>While contracts are in the "open" status, users do not accrue interest and can withdraw their staked assets at any time. However, once a contract is completed with the required counterpart, it automatically locks the assets for the 37-day staking period, during which users cannot withdraw but will accrue interest in GOLD with dynamic APY.</p>
+                        <p>The farming process includes comprehensive operations such as checking plot availability, managing BUN hibernation states, purchasing and planting seeds, coordinating with the SweatShop for BUN activities, harvesting fruits, and distributing rewards. The protocol handles all these operations automatically, ensuring optimal farming efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rewards Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Reward System</h2>
+                    <div class="implementation-content">
+                        <h3>Dynamic APY Distribution</h3>
+                        <p>The protocol implements a sophisticated reward system that distributes profits proportionally based on the current value of staked assets. The APY is not fixed but dynamic, calculated to account for the changing value of both GOLD and BUNs over time. This ensures fair distribution where higher-value assets receive proportionally higher rewards.</p>
+                        <p>Rewards are distributed in two specific periods to reduce user opportunity costs. The first distribution occurs after the initial farming cycle (17 days from staking), while the second distribution happens at the end of the complete staking period (37 days) when users withdraw their assets.</p>
+                        <p>The protocol retains a 20% fee from farming profits, taken proportionally based on the rewards gained by each asset type. This means if BUNs generate higher rewards than GOLD, a higher percentage of the fee will be taken from BUN stakers, ensuring the total fee always equals 20% of profits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Impact Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Ecosystem Impact</h2>
+                    <div class="implementation-content">
+                        <p>Tricycle Protocol serves as a temporary GOLD sink within the Sanko ecosystem, helping to stabilize the value of the in-game currency and promote a healthier economic environment. By encouraging users to stake GOLD, the protocol increases demand for the asset and potentially drives up its value.</p>
+                        <p>The platform makes farming more accessible by reducing the initial investment barriers and providing automation that eliminates the need for constant manual management. This democratizes access to profitable farming activities, allowing more users to participate in the Sanko economy regardless of their time availability or technical expertise.</p>
+                        <p>Part of the 20% protocol fee is reinvested into the Sanko ecosystem through various mechanisms including increasing GOLD liquidity pools, creating protocol tokens paired to GOLD, and purchasing gadgets for community giveaways. This reinvestment strategy ensures the protocol contributes positively to the overall health and growth of the Sanko ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Project -->
+        <section class="next-project">
+            <div class="container">
+                <a href="BCI.html" class="next-project-link">
+                    <span>Next Project</span>
+                    <h3>BCI Controlled Prosthetics →</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        // Load header
+        fetch('components/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

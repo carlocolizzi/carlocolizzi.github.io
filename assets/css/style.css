@@ -364,36 +364,6 @@ footer .container {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .case-study {
-        padding: 2rem;
-        margin-top: -20px;
-    }
-
-    .case-study-title {
-        font-size: 2rem;
-    }
-
-    .metric-value {
-        font-size: 2.5rem;
-    }
-
-    .metrics {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    footer .container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-}
-
 /* Project container override */
 .projects .container {
     max-width: none;
@@ -501,64 +471,9 @@ footer .container {
     margin-top: 0;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .background {
-        padding: 8rem 2rem;
-    }
-
-    .experience-group {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-        margin-bottom: 6rem;
-    }
-
-    .experience-logo {
-        width: 80px;
-        height: 80px;
-        padding: 1rem;
-    }
-
-    .experience-group h2 {
-        font-size: 3.6rem;
-    }
-
-    .experience-group h3 {
-        font-size: 1.6rem;
-    }
-
-    .experience-group p {
-        font-size: 1.1rem;
-    }
-
-    .experience-group .description {
-        font-size: 1.1rem;
-    }
-
-    .background .section-title {
-        font-size: 2.5rem !important;
-        margin-bottom: 3rem;
-        margin-top: 4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .experience-group.skills .description,
-    .experience-group.languages .description {
-        font-size: 1.1rem;
-    }
-}
-
-#typing-text {
-    display: inline-block;
-    min-width: 8ch;
-    text-align: center;
-}
-
 .experience-group:last-child {
     margin-bottom: 0;
 }
-
 
 @keyframes fadeInUp {
     from {
@@ -571,60 +486,10 @@ footer .container {
     }
 }
 
-/* Mobile styles for background section */
-@media (max-width: 768px) {
-    .experience-group h2 {
-        font-size: 2rem;
-    }
-
-    .experience-group h3 {
-        font-size: 1.5rem;
-    }
-
-    .experience-group .description {
-        font-size: 1.1rem;
-    }
-
-    .experience-group.skills .description,
-    .experience-group.languages .description {
-        font-size: 1.2rem;
-    }
-
-    .experience-group {
-        grid-template-columns: 60px 1fr;
-        gap: 1rem;
-    }
-
-    .experience-logo {
-        width: 60px;
-        height: 60px;
-        padding: 0.5rem;
-    }
-}
-
 #typing-text {
     display: inline-block;
     min-width: 8ch;
     text-align: center;
-}
-
-.background .section-title {
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 4rem;
-    margin-top: 6rem;
-}
-
-.background .section-title:first-child {
-    margin-top: 0;
-}
-
-@media (max-width: 768px) {
-    .background .section-title {
-        font-size: 2.5rem !important;
-        margin-bottom: 3rem;
-        margin-top: 4rem;
-    }
 }
 
 /* Menu Styles */
@@ -709,13 +574,6 @@ footer .container {
 .menu-projects a:hover {
     opacity: 1;
     transform: translateX(10px);
-}
-
-@media (max-width: 480px) {
-    .menu-overlay {
-        width: 100%;
-        right: -100%;
-    }
 }
 
 /* Case Study Page Styles */
@@ -812,27 +670,7 @@ footer .container {
     font-size: 1.2rem;
     line-height: 1.6;
     opacity: 0.7;
-    margin-bottom: 1.5rem;
-}
-
-@media (max-width: 768px) {
-    .section-grid,
-    .implementation-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .section-image {
-        margin-top: 2rem;
-    }
-
-    .implementation-content {
-        padding: 0;
-    }
-
-    .implementation-content p {
-        font-size: 1.1rem;
-    }
+    margin-bottom: 1.2rem;
 }
 
 .case-study-meta {
@@ -891,18 +729,12 @@ footer .container {
     line-height: 1.4;
 }
 
-.case-study-challenge,
-.case-study-solution,
-.case-study-users {
-    padding: 100px 0;
-}
-
 .case-study-challenge h2,
 .case-study-solution h2,
 .case-study-users h2,
 .case-study-implementation h2 {
     font-size: 3rem !important;
-    margin-bottom: 3rem !important;
+    margin-bottom: 0 !important;
     font-weight: 500 !important;
 }
 
@@ -916,7 +748,7 @@ footer .container {
 .solution-content p,
 .users-content p {
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     opacity: 0.7;
 }
 
@@ -947,7 +779,7 @@ footer .container {
 }
 
 .next-project {
-    padding: 100px 0;
+    padding: 50px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -972,38 +804,6 @@ footer .container {
 .next-project h3 {
     font-size: 2rem;
     font-weight: 500;
-}
-
-@media (max-width: 768px) {
-    .case-study-hero h1 {
-        font-size: 3rem;
-    }
-
-    .case-study-description {
-        font-size: 1.4rem;
-    }
-
-    .overview-grid {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-    }
-
-    .case-study-challenge h2,
-    .case-study-solution h2,
-    .case-study-users h2,
-    .case-study-implementation h2 {
-        font-size: 2.5rem !important;
-    }
-
-    .challenge-content p,
-    .solution-content p,
-    .users-content p {
-        font-size: 1.2rem;
-    }
-
-    .next-project h3 {
-        font-size: 1.6rem;
-    }
 }
 
 .case-study-mechanical {
@@ -1049,21 +849,6 @@ footer .container {
     color: #fff;
 }
 
-@media (max-width: 768px) {
-    .mechanical-content {
-        margin-top: 4rem;
-        padding-top: 3rem;
-    }
-
-    .mechanical-content ul {
-        grid-template-columns: 1fr;
-    }
-
-    .mechanical-content p {
-        font-size: 1.2rem;
-    }
-}
-
 /* GitHub repository button */
 .github-container {
     display: flex;
@@ -1105,25 +890,11 @@ footer .container {
     margin: 3rem 0;
 }
 
-@media (max-width: 768px) {
-    .two-column-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
 .two-column-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 2rem 0;
-}
-
-@media (max-width: 768px) {
-    .two-column-list {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
 }
 
 /* Project Details Section */
@@ -1208,4 +979,189 @@ p.results {
     font-size: 1.1rem;
     color: #333;
     line-height: 1.6;
+}
+
+.implementation-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-bottom: 1.2rem;
+}
+
+/* Mobile styles - Consolidated */
+@media (max-width: 768px) {
+    .case-study {
+        padding: 2rem;
+        margin-top: -20px;
+    }
+
+    .case-study-title {
+        font-size: 2rem;
+    }
+
+    .metric-value {
+        font-size: 2.5rem;
+    }
+
+    .metrics {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .background {
+        padding: 8rem 2rem;
+    }
+
+    .experience-group {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 6rem;
+    }
+
+    .experience-logo {
+        width: 80px;
+        height: 80px;
+        padding: 1rem;
+    }
+
+    .experience-group h2 {
+        font-size: 3.6rem;
+    }
+
+    .experience-group h3 {
+        font-size: 1.6rem;
+    }
+
+    .experience-group p {
+        font-size: 1.1rem;
+    }
+
+    .experience-group .description {
+        font-size: 1.1rem;
+    }
+
+    .background .section-title {
+        font-size: 2.5rem !important;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+    }
+
+    .experience-group.skills .description,
+    .experience-group.languages .description {
+        font-size: 1.1rem;
+    }
+
+    .experience-group h2 {
+        font-size: 2rem;
+    }
+
+    .experience-group h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience-group .description {
+        font-size: 1.1rem;
+    }
+
+    .experience-group.skills .description,
+    .experience-group.languages .description {
+        font-size: 1.2rem;
+    }
+
+    .experience-group {
+        grid-template-columns: 60px 1fr;
+        gap: 1rem;
+    }
+
+    .experience-logo {
+        width: 60px;
+        height: 60px;
+        padding: 0.5rem;
+    }
+
+    .menu-overlay {
+        width: 100%;
+        right: -100%;
+    }
+
+    .section-grid,
+    .implementation-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section-image {
+        margin-top: 2rem;
+    }
+
+    .implementation-content {
+        padding: 0;
+    }
+
+    .implementation-content p {
+        font-size: 1.1rem;
+    }
+
+    .case-study-hero h1 {
+        font-size: 3rem;
+    }
+
+    .case-study-description {
+        font-size: 1.4rem;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .case-study-challenge h2,
+    .case-study-solution h2,
+    .case-study-users h2,
+    .case-study-implementation h2 {
+        font-size: 2.5rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .challenge-content p,
+    .solution-content p,
+    .users-content p {
+        font-size: 1.2rem;
+    }
+
+    .next-project h3 {
+        font-size: 1.6rem;
+    }
+
+    .mechanical-content {
+        margin-top: 4rem;
+        padding-top: 3rem;
+    }
+
+    .mechanical-content ul {
+        grid-template-columns: 1fr;
+    }
+
+    .mechanical-content p {
+        font-size: 1.2rem;
+    }
+
+    .two-column-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .two-column-list {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 } 
