@@ -22,7 +22,7 @@
                         <span class="case-study-category">Autonomous Systems & AI</span>
                     </div>
                     <h1>Automatic Chess Playing Robot</h1>
-                    <p class="case-study-description">An autonomous system designed for a single player to compete against a Chess AI. The AI's pieces move automatically using a hidden electromagnet system, while the player's moves are detected by hall-effect sensors embedded under each square.</p>
+                    <p class="case-study-description">A robot that plays chess against you. AI pieces move themselves while sensors detect your moves.</p>
                     <div class="github-container">
                         <a href="https://github.com/carlocolizzi/chess-robot" target="_blank" class="github-button">
                             <i class="fab fa-github"></i>
@@ -33,85 +33,49 @@
             </div>
         </section>
 
-        <!-- Overview Section -->
-        <section class="case-study-overview">
+
+        <!-- Challenge Section -->
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-item">
-                        <h3>Playing Area</h3>
-                        <div class="stat">20"×20"</div>
-                        <p>Tournament-standard size chessboard</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Chess Engine</h3>
-                        <div class="stat">Stockfish 14.1</div>
-                        <p>Advanced chess AI with robust decision-making</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Sensors</h3>
-                        <div class="stat">64</div>
-                        <p>Hall-effect sensors (one under each square)</p>
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>Creating an autonomous chess-playing system presented several key challenges that required innovative solutions across multiple engineering disciplines. The primary goal was to develop a mechanism that could move chess pieces without human intervention while maintaining the authentic feel of playing chess.</p>
+                        <p>The system needed to reliably detect player moves, integrate a chess AI with physical movement systems, and build a robust physical structure to house all components. Most importantly, it had to create a seamless user experience that preserved the tactile and visual aspects of real-life chess playing.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Creating an autonomous chess-playing system presented several key challenges:</p>
-                            <ul>
-                                <li>Developing a mechanism to move chess pieces without human intervention</li>
-                                <li>Designing a reliable system to detect player moves</li>
-                                <li>Integrating a chess AI with physical movement systems</li>
-                                <li>Building a robust physical structure to house all components</li>
-                                <li>Creating a seamless user experience that preserves the feel of real-life chess</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/chess-idea.jpg" alt="First Chess Robot Drawing">
-                        <p class="image-caption">First Chess Robot Drawing</p>
-                    </div>
+                <div class="section-image">
+                    <img src="assets/images/chess-idea.jpg" alt="First Chess Robot Drawing" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">First Chess Robot Drawing</p>
                 </div>
             </div>
         </section>
 
         <!-- Solution Section -->
-        <section class="case-study-solution">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid reverse">
-                    <div class="section-content">
-                        <h2>The Solution</h2>
-                        <div class="solution-content">
-                            <p>We developed an integrated system featuring:</p>
-                            <ul>
-                                <li>A two-axis gantry system with an electromagnet to move the AI's pieces</li>
-                                <li>An 8×8 hall-effect sensor matrix to detect player moves</li>
-                                <li>Integration with the Stockfish 14.1 chess engine via UCI</li>
-                                <li>Custom 3D-printed components for precise fit and rapid iteration</li>
-                                <li>A robust software architecture to coordinate all systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/chess-gantry-assembly.png" alt="Gantry System Assembly">
-                        <p class="image-caption">Two-Axis Gantry System Assembly</p>
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We developed an integrated system featuring a two-axis gantry system with an electromagnet to move the AI's pieces, an 8×8 hall-effect sensor matrix to detect player moves, and integration with the Stockfish 14.1 chess engine via UCI. The solution includes custom 3D-printed components for precise fit and rapid iteration, along with a robust software architecture to coordinate all systems.</p>
+                        <p>The mechanical subsystem was designed to move pieces across the board with precision and reliability. Two NEMA 17 stepper motors control an electromagnet through a two-axis gantry system, using M8 "fast threaded" rods connected to steppers via couplings for precise movement. The system features custom-designed and 3D-printed mounts for steppers, rods, electromagnets, and bearings, with unthreaded rods added for additional stability during movement. The 20"×20" playing field matches American tournament standard dimensions.</p>
                     </div>
                 </div>
-                <div class="mechanical-content">
-                    <p>The mechanical subsystem was designed to move pieces across the board with precision and reliability:</p>
-                    <ul>
-                        <li>Two NEMA 17 stepper motors controlling an electromagnet through a two-axis gantry system</li>
-                        <li>M8 "fast threaded" rods connected to steppers via couplings for precise movement</li>
-                        <li>Custom-designed and 3D-printed mounts for steppers, rods, electromagnets, and bearings</li>
-                        <li>Unthreaded rods added for additional stability during movement</li>
-                        <li>20"×20" playing field matching American tournament standard dimensions</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/chess-gantry-assembly.png" alt="Gantry System Assembly" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Two-Axis Gantry System Assembly</p>
                 </div>
             </div>
         </section>
@@ -119,84 +83,59 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Technical Implementation</h2>
-                        <div class="implementation-content">
-                            <p>The system architecture consists of three main components working together:</p>
-                            <p><strong>Software:</strong> Python controls game flow using the Python Chess Library, handling move validation and AI integration. The Chess Drive Class translates chess moves to motor commands, while the MoveSensor class interprets player actions from the hall-effect sensor data.</p>
-                            <p><strong>Electrical:</strong> An 8×8 Hall Effect Sensor Matrix uses two CD4051BE multiplexer/decoders to read sensor values, while the electromagnet is controlled via a 2N3904 NPN switching transistor. Two NEMA 17 Stepper motors connected to A4988 drivers control the gantry movement.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/chess-logic.png" alt="Chess System Logic">
-                        <p class="image-caption">System Logic</p>
-                    </div>
-                </div>
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Development Process</h2>
-                        <div class="implementation-content">
-                            <p>The project was developed over three main sprints:</p>
-                            <p><strong>Sprint 1:</strong> Concept development, initial testing with a DC motor and temporary electromagnet, and exploration of LED matrix technology.</p>
-                            <p><strong>Sprint 2:</strong> First draft of the box design, iteration on 3D-printed mounts, and transition from a 2×2 test matrix to PCB design for the full 8×8 sensor matrix.</p>
-                            <p><strong>Sprint 3:</strong> Final assembly of the gantry system, completion of the hall effect sensor matrix, and integration of all subsystems. This sprint included significant troubleshooting of motor control issues and optimization of movement parameters.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/hall-effect-matrix-schematic-912x705.png" alt="Hall Effect Matrix Schematic">
-                        <p class="image-caption">Hall Effect Sensor Matrix Schematic</p>
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>The system architecture consists of three main components working together. Python controls game flow using the Python Chess Library, handling move validation and AI integration. The Chess Drive Class translates chess moves to motor commands, while the MoveSensor class interprets player actions from the hall-effect sensor data.</p>
+                        <p>An 8×8 Hall Effect Sensor Matrix reads sensor values, while the electromagnet is controlled via a switching transistor. Two NEMA 17 Stepper motors control the gantry movement, enabling precise piece positioning across the entire board.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Subsystems Section -->
-        <section class="case-study-users">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <h2>Key Subsystems</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Mechanical System</h3>
-                        <ul>
-                            <li>Two-axis gantry with NEMA 17 stepper motors</li>
-                            <li>Custom 3D-printed mounts for all components</li>
-                            <li>Electromagnet mount with dual-rod stabilization</li>
-                            <li>Linear bearings for smooth movement across axes</li>
-                            <li>Ball bearings to minimize rotational friction</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Detection System</h3>
-                        <ul>
-                            <li>A3144 Hall effect sensors to detect magnets in chess pieces</li>
-                            <li>CD4051BE multiplexer/decoder system for efficient sensor reading</li>
-                            <li>MoveSensor class to interpret pickup and placement actions</li>
-                            <li>Special handling for piece captures and moves</li>
-                            <li>Position determination through matrix scanning</li>
-                        </ul>
+                <div class="section-image">
+                    <img src="assets/images/chess-logic.png" alt="Chess System Logic" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">System Logic</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Process Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Development Process</h2>
+                    <div class="implementation-content">
+                        <p>The project was developed over three main sprints, each building upon the previous work. Sprint 1 focused on concept development, initial testing with a DC motor and temporary electromagnet, and exploration of LED matrix technology to understand the basic requirements.</p>
+                        <p>Sprint 2 involved the first draft of the box design, iteration on 3D-printed mounts, and transition from a 2×2 test matrix to PCB design for the full 8×8 sensor matrix. This phase was crucial for understanding the physical constraints and electrical requirements.</p>
+                        <p>Sprint 3 encompassed the final assembly of the gantry system, completion of the hall effect sensor matrix, and integration of all subsystems. This sprint included significant troubleshooting of motor control issues and optimization of movement parameters to achieve reliable operation.</p>
                     </div>
                 </div>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Control System</h3>
-                        <ul>
-                            <li>Python Chess Library for game state management</li>
-                            <li>Stockfish 14.1 chess engine for AI decisions</li>
-                            <li>Serial communication between Python and Arduino</li>
-                            <li>CNC shield with A4988 stepper drivers</li>
-                            <li>Transistor-controlled electromagnet activation</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Challenges Overcome</h3>
-                        <ul>
-                            <li>Stepper motor acceleration optimization</li>
-                            <li>Splitting large components for manufacturing constraints</li>
-                            <li>Interdisciplinary troubleshooting across subsystems</li>
-                            <li>PCB design issues and alternatives for sensor layout</li>
-                            <li>Limited budget and timeline constraints</li>
-                        </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/hall-effect-matrix-schematic-912x705.png" alt="Hall Effect Matrix Schematic" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Hall Effect Sensor Matrix Schematic</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Subsystems Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Key Subsystems</h2>
+                    <div class="implementation-content">
+                        <p>The mechanical system features a two-axis gantry with NEMA 17 stepper motors, custom 3D-printed mounts for all components, and an electromagnet mount with dual-rod stabilization. Linear bearings ensure smooth movement across axes, while ball bearings minimize rotational friction for precise positioning.</p>
+                        <p>The detection system uses A3144 Hall effect sensors to detect magnets in chess pieces, with a CD4051BE multiplexer/decoder system for efficient sensor reading. The MoveSensor class interprets pickup and placement actions, with special handling for piece captures and moves, and position determination through matrix scanning.</p>
+                        <p>The control system integrates the Python Chess Library for game state management, Stockfish 14.1 chess engine for AI decisions, and serial communication between Python and Arduino. A CNC shield with A4988 stepper drivers manages motor control, while transistor-controlled electromagnet activation enables piece movement.</p>
                     </div>
                 </div>
             </div>

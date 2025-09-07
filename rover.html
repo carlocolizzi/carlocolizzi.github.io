@@ -22,7 +22,7 @@
                         <span class="case-study-category">Autonomous Systems & Robotics</span>
                     </div>
                     <h1>Autonomous RC Rover</h1>
-                    <p class="case-study-description">A planetary rover platform designed to complete three missions around the Olin oval: navigating the "wasteland", docking at a station, and payload dropping. The rover uses multiple sensing methods including IR sensors, sonar, and computer vision for navigation.</p>
+                    <p class="case-study-description">A robot that drives itself through three missions: navigating obstacles, docking at stations, and dropping payloads, using cameras and sensors to see and navigate.</p>
                     <div class="github-container">
                         <a href="https://github.com/carlocolizzi/planetary-rover" target="_blank" class="github-button">
                             <i class="fab fa-github"></i>
@@ -33,84 +33,49 @@
             </div>
         </section>
 
-        <!-- Overview Section -->
-        <section class="case-study-overview">
+
+        <!-- Challenge Section -->
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-item">
-                        <h3>Team Size</h3>
-                        <div class="stat">6</div>
-                        <p>Multidisciplinary engineering team</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Sensing</h3>
-                        <div class="stat">8</div>
-                        <p>Input devices (5 IR, 2 Sonar, 1 PiCam)</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Missions</h3>
-                        <div class="stat">3</div>
-                        <p>Complex navigation challenges completed</p>
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>Building an autonomous rover capable of navigating complex environments presented several key challenges that required innovative solutions across multiple engineering disciplines. The primary goal was to develop a system that could complete three distinct missions: navigating through obstacles, docking at specific stations, and dropping payloads at designated locations.</p>
+                        <p>The rover needed reliable sensor integration for different environmental conditions, a robust control system for navigation in unstructured environments, and computer vision algorithms for path finding and April Tag detection. Additionally, it required a mechanical system that could carry payloads and operate reliably, along with a power distribution system that supported both logic and motor circuits.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Building an autonomous rover capable of navigating complex environments presented several key challenges:</p>
-                            <ul>
-                                <li>Developing reliable sensor integration for different environmental conditions</li>
-                                <li>Creating a robust control system for navigation in unstructured environments</li>
-                                <li>Implementing computer vision algorithms for path finding and April Tag detection</li>
-                                <li>Designing a mechanical system that could carry payloads and operate reliably</li>
-                                <li>Building a power distribution system that supported both logic and motor circuits</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/rover-mission-2.jpg" alt="Rover Mission Path">
-                    </div>
+                <div class="section-image">
+                    <img src="assets/images/rover-mission-2.jpg" alt="Rover Mission Path" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Rover Mission Path</p>
                 </div>
             </div>
         </section>
 
         <!-- Solution Section -->
-        <section class="case-study-solution">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid reverse">
-                    <div class="section-content">
-                        <h2>The Solution</h2>
-                        <div class="solution-content">
-                            <p>We developed an integrated autonomous system featuring:</p>
-                            <ul>
-                                <li>Sensor suite with five IR sensors at different angles for wall detection</li>
-                                <li>Pan/tilt turret with PiCam and two sonar sensors for environmental sensing</li>
-                                <li>Computer vision system for path finding and April Tag recognition</li>
-                                <li>Custom payload claw mechanism for object manipulation</li>
-                                <li>Dual-circuit power system with separated logic and motor supplies</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/rover-mission.jpg" alt="Rover Mission 2">
-                        <p class="image-caption">Rover in action</p>
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We developed an integrated autonomous system featuring a sensor suite with five IR sensors at different angles for wall detection, a pan/tilt turret with PiCam and two sonar sensors for environmental sensing, and a computer vision system for path finding and April Tag recognition. The solution includes a custom payload claw mechanism for object manipulation and a dual-circuit power system with separated logic and motor supplies.</p>
+                        <p>The mechanical system consisted of several key components designed for modularity and functionality. A sensor suite with five IR sensors mounted at different angles (30° apart) detects walls and obstacles, while a pan/tilt turret with PiCam and two sonar sensors provides improved environmental awareness. The main body is constructed from Sentra board providing anchor points and structural support, with a payload claw mechanism featuring interlocking gear design for reliable object manipulation and enclosed battery housing to protect components from environmental conditions.</p>
                     </div>
                 </div>
-                <div class="mechanical-content">
-                    <p>The mechanical system consisted of several key components designed for modularity and functionality:</p>
-                    <ul>
-                        <li>Sensor suite with five IR sensors mounted at different angles (30° apart) for detecting walls and obstacles</li>
-                        <li>Pan/tilt turret with PiCam and two sonar sensors for improved environmental awareness</li>
-                        <li>Main body constructed from Sentra board providing anchor points and structural support</li>
-                        <li>Payload claw mechanism with interlocking gear design for reliable object manipulation</li>
-                        <li>Enclosed battery housing to protect components from environmental conditions</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/rover-mission.jpg" alt="Rover Mission 2" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Rover in action</p>
                 </div>
             </div>
         </section>
@@ -118,84 +83,58 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Technical Implementation</h2>
-                        <div class="implementation-content">
-                            <p>The rover featured two main circuits running in parallel:</p>
-                            <p><strong>Motors Circuit:</strong> Powered by a 7.2V battery connected to an E-Stop button for safety. Power was distributed between an Electronic Speed Control board and a power distribution board (PDB) connected to a PiHAT for communication with the Raspberry Pi. This circuit controlled four servos (one for steering, one for the claw, and two for the pan/tilt turret) and the main drive motor.</p>
-                            <p><strong>Logic Circuit:</strong> Connected eight input devices (5 IR sensors, 2 sonar sensors, and 1 PiCam) to two Qwiic boards that provided power and communicated with the Raspberry Pi through a PiHAT connector. The PiCam connected directly to the Pi through a built-in ribbon connector.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/rover-diagram.jpg" alt="Rover Circuit Diagram" style="max-height: 600px; object-fit: contain; width: auto; margin: 0 auto; display: block;">
-                        <p class="image-caption">Rover Power and Control System</p>
-                    </div>
-                </div>
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Software Architecture</h2>
-                        <div class="implementation-content">
-                            <p>The control software was implemented in Python and structured around three main missions:</p>
-                            <p><strong>Mission 1 (Wasteland):</strong> Combined hardcoded initial turns with IR sensor-based wall approach and sonar-based wall following. The system would measure distance from the wall through sonar sensors and determine whether to turn right, left, or go straight to maintain a constant distance.</p>
-                            <p><strong>Mission 2 (Docking):</strong> Used April Tag detection for intersection identification and navigation decisions. After turning at an intersection, the rover implemented color masking and path finding through image processing, analyzing each frame to identify the path and determine direction.</p>
-                            <p><strong>Mission 3 (Payload Drop):</strong> Combined elements from previous missions with specific payload dropping behaviors. Once the rover detected the appropriate April Tag (ID 4, 5, or 6), it would approach the payload station, and when close enough, send a signal to the servo controlling the claw to open and release the payload.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/rover-claw.jpeg" alt="Rover Claw">
-                        <p class="image-caption">Rover Claw Mechanism</p>
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>The rover featured two main circuits running in parallel. The Motors Circuit was powered by a 7.2V battery connected to an E-Stop button for safety, with power distributed between an Electronic Speed Control board and a power distribution board (PDB) connected to a PiHAT for communication with the Raspberry Pi. This circuit controlled four servos (one for steering, one for the claw, and two for the pan/tilt turret) and the main drive motor.</p>
+                        <p>The Logic Circuit connected eight input devices (5 IR sensors, 2 sonar sensors, and 1 PiCam) to two Qwiic boards that provided power and communicated with the Raspberry Pi through a PiHAT connector. The PiCam connected directly to the Pi through a built-in ribbon connector, enabling real-time computer vision processing for navigation and April Tag detection.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Results Section -->
-        <section class="case-study-users">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <h2>Mission Performance</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Mission 1: Wasteland</h3>
-                        <ul>
-                            <li>Successfully navigated out of the starting dock</li>
-                            <li>Completed left turn and advanced toward the MAC wall</li>
-                            <li>Maintained wall-following behavior with IR and sonar sensors</li>
-                            <li>Autonomously navigated most of the course with only one manual intervention</li>
-                            <li>Reached the end of the building and stopped appropriately</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Mission 2: Docking</h3>
-                        <ul>
-                            <li>Successfully exited starting dock and navigated toward the curb</li>
-                            <li>Made appropriate turn at the intersection after detecting April Tag</li>
-                            <li>Used image masking for path finding along the central route</li>
-                            <li>Recognized docking station April Tag and initiated docking sequence</li>
-                            <li>Successfully stopped approximately 2 inches from the wall</li>
-                        </ul>
+                <div class="section-image">
+                    <img src="assets/images/rover-diagram.jpg" alt="Rover Circuit Diagram" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Rover Power and Control System</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Architecture Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Software Architecture</h2>
+                    <div class="implementation-content">
+                        <p>The control software was implemented in Python and structured around three main missions. Mission 1 (Wasteland) combined hardcoded initial turns with IR sensor-based wall approach and sonar-based wall following. The system would measure distance from the wall through sonar sensors and determine whether to turn right, left, or go straight to maintain a constant distance.</p>
+                        <p>Mission 2 (Docking) used April Tag detection for intersection identification and navigation decisions. After turning at an intersection, the rover implemented color masking and path finding through image processing, analyzing each frame to identify the path and determine direction. Mission 3 (Payload Drop) combined elements from previous missions with specific payload dropping behaviors, detecting the appropriate April Tag (ID 4, 5, or 6) and approaching the payload station to release the payload when close enough.</p>
                     </div>
                 </div>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Mission 3: Payload Drop</h3>
-                        <ul>
-                            <li>Effectively followed the same path as in Mission 2</li>
-                            <li>Correctly identified the April Tag for the payload drop location</li>
-                            <li>Successfully approached the payload box at an appropriate speed</li>
-                            <li>Stopped at the correct distance from the target</li>
-                            <li>Successfully opened the claw mechanism to drop the payload</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Challenges Overcome</h3>
-                        <ul>
-                            <li>Steering servo failure requiring last-minute recalibration</li>
-                            <li>Connectivity issues when transitioning between WiFi networks</li>
-                            <li>Physical obstacles like granite blocks causing temporary path deviations</li>
-                            <li>Integration challenges between mechanical, electrical, and software systems</li>
-                            <li>Limited timeline and budget constraints</li>
-                        </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/rover-claw.jpeg" alt="Rover Claw" style="width: 80%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Rover Claw Mechanism</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Performance Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Mission Performance</h2>
+                    <div class="implementation-content">
+                        <p>Mission 1 (Wasteland) was successfully completed with the rover navigating out of the starting dock, completing a left turn and advancing toward the MAC wall, and maintaining wall-following behavior with IR and sonar sensors. The rover autonomously navigated most of the course with only one manual intervention and reached the end of the building, stopping appropriately.</p>
+                        <p>Mission 2 (Docking) achieved success with the rover exiting the starting dock and navigating toward the curb, making an appropriate turn at the intersection after detecting April Tag, and using image masking for path finding along the central route. The rover recognized the docking station April Tag, initiated the docking sequence, and successfully stopped approximately 2 inches from the wall.</p>
+                        <p>Mission 3 (Payload Drop) effectively followed the same path as Mission 2, correctly identifying the April Tag for the payload drop location, successfully approaching the payload box at an appropriate speed, stopping at the correct distance from the target, and successfully opening the claw mechanism to drop the payload. The project overcame several challenges including steering servo failure requiring last-minute recalibration, connectivity issues when transitioning between WiFi networks, and physical obstacles like granite blocks causing temporary path deviations.</p>
                     </div>
                 </div>
             </div>
