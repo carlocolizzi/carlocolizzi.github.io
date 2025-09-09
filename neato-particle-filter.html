@@ -57,63 +57,47 @@
         </section>
 
         <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Accurate self-localization is one of the most fundamental challenges in robotics. To function autonomously, a robot must know where it is in its environment. This project tackled several specific challenges:</p>
-                            <ul>
-                                <li>Handling inherent noise and inaccuracies in sensor measurements</li>
-                                <li>Compensating for odometry drift that accumulates over time</li>
-                                <li>Developing algorithms that can process sensor data in real-time</li>
-                                <li>Creating methods to effectively estimate the robot's position and orientation (pose)</li>
-                                <li>Implementing efficient particle distribution and resampling strategies</li>
-                                <li>Integrating multiple coordinate frames (map, odom, baselink) correctly</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/particle-filter-3.jpg" alt="Gazebo Simulation Environment">
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>Accurate self-localization is one of the most fundamental challenges in robotics. To function autonomously, a robot must know where it is in its environment. This project addressed the complex problem of determining a robot's precise position and orientation using noisy sensor data and imperfect odometry measurements.</p>
+                        <p>The localization challenge involved handling inherent noise and inaccuracies in sensor measurements, compensating for odometry drift that accumulates over time, and developing algorithms that can process sensor data in real-time. Additionally, the system needed to effectively estimate the robot's position and orientation (pose), implement efficient particle distribution and resampling strategies, and correctly integrate multiple coordinate frames (map, odom, baselink) for accurate spatial reasoning.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="case-study-solution">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="section-grid reverse">
-                    <div class="section-content">
-                        <h2>The Solution</h2>
-                        <div class="solution-content">
-                            <p>We implemented a particle filter algorithm that solved the localization problem through a probabilistic approach:</p>
-                            <ul>
-                                <li>Initialized particles (potential robot positions) randomly distributed across the map</li>
-                                <li>Used odometry data to update particle positions as the robot moved</li>
-                                <li>Assigned weights to particles based on how well they matched actual LIDAR readings</li>
-                                <li>Implemented intelligent resampling to concentrate particles in likely locations</li>
-                                <li>Calculated the robot's estimated position by averaging weighted particle positions</li>
-                                <li>Provided an interface for manual position resets when necessary</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/particle-filter-4.png" alt="Particle Cloud Visualization">
-                        <p class="image-caption">Particle cloud surrounding the initial robot pose estimate</p>
+                <div class="section-image">
+                    <img src="assets/images/particle-filter-3.jpg" alt="Gazebo Simulation Environment">
+                    <p class="image-caption">Particle Cloud Visualization</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We implemented a particle filter algorithm that solved the localization problem through a probabilistic approach. The system initialized particles (potential robot positions) randomly distributed across the map, used odometry data to update particle positions as the robot moved, and assigned weights to particles based on how well they matched actual LIDAR readings. The algorithm implemented intelligent resampling to concentrate particles in likely locations, calculated the robot's estimated position by averaging weighted particle positions, and provided an interface for manual position resets when necessary.</p>
+                        <p>The particle filter works through an iterative process of prediction and correction. As the robot moves, each particle's position is updated based on odometry data, while the filter simulates LIDAR readings for each particle position on the map. These simulated readings are compared with actual sensor data, and particles with readings similar to actual data receive higher weights. During resampling, particles with higher weights are more likely to be selected, and this process continues until particles converge around the most probable location.</p>
                     </div>
                 </div>
-                <div class="mechanical-content">
-                    <p>The particle filter works through an iterative process of prediction and correction:</p>
-                    <ul>
-                        <li>As the robot moves, each particle's position is updated based on odometry data</li>
-                        <li>The filter simulates LIDAR readings for each particle position on the map</li>
-                        <li>These simulated readings are compared with actual sensor data</li>
-                        <li>Particles with readings similar to actual data receive higher weights</li>
-                        <li>During resampling, particles with higher weights are more likely to be selected</li>
-                        <li>This process continues until particles converge around the most probable location</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/particle-filter-4.png" alt="Particle Cloud Visualization">
+                    <p class="image-caption">Gazebo Simulation Environment</p>
                 </div>
             </div>
         </section>
@@ -121,90 +105,48 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Algorithm Implementation</h2>
-                        <div class="implementation-content">
-                            <p>Our particle filter implementation followed a structured approach to localization:</p>
-                            <p><strong>Particle Initialization:</strong> The filter began by generating a set of randomly distributed particles across the map, with a higher concentration around the initial estimate of the robot's position. Each particle represented a potential pose (position and orientation) of the robot.</p>
-                            <p><strong>Motion Update:</strong> As the robot moved through its environment, we used data from the odometry sensor to update the position of each particle. This step simulated how the particles would move if they were the actual robot, incorporating realistic motion noise to account for sensor inaccuracies.</p>
-                            <p><strong>Sensor Update:</strong> For each particle, we simulated what the robot's LIDAR scan would look like if the robot were at that particle's position. By comparing these simulated scans with the actual LIDAR readings from the robot, we assigned weights to each particle based on how closely the simulated and actual scans matched.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/particle-filter-2.png" alt="Laser Scan Alignment">
-                        <p class="image-caption">Alignment between laser scan (red) and map (black/white)</p>
-                    </div>
-                </div>
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>System Integration & Visualization</h2>
-                        <div class="implementation-content">
-                            <p>The particle filter was integrated with ROS2 and various visualization tools:</p>
-                            <p><strong>Resampling Process:</strong> After assigning weights to all particles, we implemented a resampling step where particles were selected with probability proportional to their weights. This meant that particles with higher weights (those more likely to represent the robot's true position) were more likely to be selected for the next iteration.</p>
-                            <p><strong>Pose Estimation:</strong> The final estimate of the robot's pose was calculated by taking a weighted average of all particle positions. This provided a continuous, smooth estimate of the robot's location within the map.</p>
-                            <p><strong>Manual Reset Capability:</strong> We implemented functionality to "reset" the filter with a new initial pose estimate when necessary. This was useful in situations where the particle filter might have lost track of the robot's position. Using RViz, we could provide a new initial pose (represented as a green arrow) to re-initialize the particle distribution.</p>
-                            <p><strong>Visualization:</strong> The entire process was visualized in RViz, showing the particle cloud, laser scans, and estimated robot position in real-time. This visualization was crucial for debugging and demonstrating the effectiveness of the algorithm.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/particle-filter-1.png" alt="RViz Pose Reset">
-                        <p class="image-caption">Providing a new initial pose estimate through RViz</p>
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>Our particle filter implementation followed a structured approach to localization. The filter began by generating a set of randomly distributed particles across the map, with a higher concentration around the initial estimate of the robot's position. Each particle represented a potential pose (position and orientation) of the robot. As the robot moved through its environment, we used data from the odometry sensor to update the position of each particle, simulating how the particles would move if they were the actual robot while incorporating realistic motion noise to account for sensor inaccuracies.</p>
+                        <p>For each particle, we simulated what the robot's LIDAR scan would look like if the robot were at that particle's position. By comparing these simulated scans with the actual LIDAR readings from the robot, we assigned weights to each particle based on how closely the simulated and actual scans matched. After assigning weights to all particles, we implemented a resampling step where particles were selected with probability proportional to their weights, meaning that particles with higher weights were more likely to be selected for the next iteration.</p>
+                        <p>The final estimate of the robot's pose was calculated by taking a weighted average of all particle positions, providing a continuous, smooth estimate of the robot's location within the map. We also implemented functionality to "reset" the filter with a new initial pose estimate when necessary, using RViz to provide a new initial pose represented as a green arrow to re-initialize the particle distribution. The entire process was visualized in RViz, showing the particle cloud, laser scans, and estimated robot position in real-time, which was crucial for debugging and demonstrating the effectiveness of the algorithm.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Technical Details Section -->
-        <section class="case-study-users">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <h2>Technical Details</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Algorithm Structure</h3>
-                        <ul>
-                            <li>Initiate random particles in the map frame</li>
-                            <li>Update particles using odometry data (odom frame)</li>
-                            <li>Adjust particle weights based on laser scan agreement (baselink frame)</li>
-                            <li>Resample particles with probability proportional to weights</li>
-                            <li>Update robot pose estimation and map-to-odom transform</li>
-                            <li>Repeat process continuously for real-time tracking</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>System Performance</h3>
-                        <ul>
-                            <li>Successful tracking in various environments</li>
-                            <li>Particle convergence to robot's actual position</li>
-                            <li>Effective handling of sensor noise and uncertainty</li>
-                            <li>Smooth pose estimation with minimal jumps</li>
-                            <li>Recovery capability through manual pose resets</li>
-                            <li>Real-time performance suitable for navigation tasks</li>
-                        </ul>
+                <div class="section-image">
+                    <img src="assets/images/particle-filter-2.png" alt="Laser Scan Alignment">
+                    <p class="image-caption">Laser Scan Alignment with Map</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Algorithm Performance</h2>
+                    <div class="implementation-content">
+                        <p>The particle filter algorithm demonstrated successful tracking in various environments, with particles converging to the robot's actual position and effective handling of sensor noise and uncertainty. The system provided smooth pose estimation with minimal jumps and maintained real-time performance suitable for navigation tasks. The algorithm's structure involved initiating random particles in the map frame, updating particles using odometry data from the odom frame, and adjusting particle weights based on laser scan agreement in the baselink frame.</p>
+                        <p>The system's frame integration managed multiple coordinate systems effectively, with the map frame serving as the global reference for the environment, the odom frame tracking the robot's traveled distance (though prone to drift), and the baselink frame representing the robot's local coordinate system. Transform management between all coordinate frames, coordinate conversions for sensor data processing, and publication of corrected transforms to ROS2 ensured accurate spatial reasoning throughout the localization process.</p>
                     </div>
                 </div>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Frame Integration</h3>
-                        <ul>
-                            <li>Map frame: Global reference for environment</li>
-                            <li>Odom frame: Robot's traveled distance (prone to drift)</li>
-                            <li>Baselink frame: Robot's local coordinate system</li>
-                            <li>Transform management between all coordinate frames</li>
-                            <li>Coordinate conversions for sensor data processing</li>
-                            <li>Publication of corrected transforms to ROS2</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Results & Applications</h3>
-                        <ul>
-                            <li>Accurate localization in predefined maps</li>
-                            <li>Foundation for autonomous navigation systems</li>
-                            <li>Basis for path planning and obstacle avoidance</li>
-                            <li>Platform for further robotics research</li>
-                            <li>Demonstration of probabilistic robotics principles</li>
-                            <li>Educational tool for understanding localization algorithms</li>
-                        </ul>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Applications & Results</h2>
+                    <div class="implementation-content">
+                        <p>The particle filter implementation achieved accurate localization in predefined maps, serving as a foundation for autonomous navigation systems and providing the basis for path planning and obstacle avoidance. The system demonstrated effective recovery capability through manual pose resets when necessary, ensuring robust operation even when the filter lost track of the robot's position.</p>
+                        <p>This project served as both a platform for further robotics research and a demonstration of probabilistic robotics principles. The implementation provided an educational tool for understanding localization algorithms while showcasing the practical application of advanced mathematical concepts in real-world robotics systems. The successful integration with ROS2 and visualization tools made the algorithm accessible for debugging, demonstration, and further development.</p>
                     </div>
                 </div>
             </div>

@@ -57,54 +57,37 @@
         </section>
 
         <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Programming a Neato robot vacuum to perform multiple autonomous behaviors required overcoming several technical challenges:</p>
-                            <ul>
-                                <li>Creating intuitive teleoperation controls with reliable stop mechanisms</li>
-                                <li>Developing precise motion control for predictable movements and turns</li>
-                                <li>Implementing sensor processing algorithms to detect walls and objects</li>
-                                <li>Building robust PID controllers for smooth wall-following behavior</li>
-                                <li>Designing a finite state machine to coordinate complex behaviors</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/neato-1.jpg" alt="Neato Electronics">
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>Programming a Neato robot vacuum to perform multiple autonomous behaviors presented unique opportunities to explore robotics control systems. The project involved creating intuitive teleoperation controls with reliable stop mechanisms, developing precise motion control for predictable movements and turns, and implementing sensor processing algorithms to detect walls and objects effectively.</p>
+                        <p>Building robust PID controllers for smooth wall-following behavior required careful tuning to maintain consistent distance from walls while navigating around corners and obstacles. Additionally, designing a finite state machine to coordinate complex behaviors demanded thoughtful architecture to ensure smooth transitions between different operational modes and reliable performance across various environmental conditions.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="case-study-solution">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="full-width-content">
-                    <h2>The Solution</h2>
-                    <div class="solution-content">
-                        <p>We developed a comprehensive set of controllers and algorithms to enable diverse robot behaviors:</p>
-                        <ul>
-                            <li>WASD keyboard teleoperation with explicit stop commands</li>
-                            <li>Square-driving algorithm with timed maneuvers and motion pauses</li>
-                            <li>Wall-following using PID control and right-side LIDAR data</li>
-                            <li>Person-following via object detection and position tracking</li>
-                            <li>Obstacle avoidance with vector-based navigation</li>
-                        </ul>
-                    </div>
+                <div class="section-image">
+                    <img src="assets/images/neato-1.jpg" alt="Neato Electronics">
+                    <p class="image-caption">Neato Robot Vacuum Electronics</p>
                 </div>
-                <div class="mechanical-content">
-                    <p>Each behavior required specific implementation strategies to ensure reliable operation:</p>
-                    <ul>
-                        <li>The teleoperation system used ROS publishers to send velocity commands based on keyboard input</li>
-                        <li>The square-driving routine incorporated sleep commands with stop signals between movements</li>
-                        <li>Wall-following used the minimum value from the right half of the LIDAR scan (elements 180-359)</li>
-                        <li>Person-following included both object detection and position tracking in global coordinates</li>
-                        <li>Obstacle avoidance combined target vectors with weighted obstacle-avoidance vectors</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We developed a comprehensive set of controllers and algorithms to enable diverse robot behaviors, including WASD keyboard teleoperation with explicit stop commands, a square-driving algorithm with timed maneuvers and motion pauses, and wall-following using PID control and right-side LIDAR data. The system also incorporated person-following via object detection and position tracking, along with obstacle avoidance using vector-based navigation.</p>
+                        <p>Each behavior required specific implementation strategies to ensure reliable operation. The teleoperation system used ROS publishers to send velocity commands based on keyboard input, while the square-driving routine incorporated sleep commands with stop signals between movements. Wall-following utilized the minimum value from the right half of the LIDAR scan (elements 180-359), and person-following included both object detection and position tracking in global coordinates. The obstacle avoidance system combined target vectors with weighted obstacle-avoidance vectors to determine optimal navigation paths.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -112,79 +95,48 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="full-width-content">
-                    <h2>Teleoperation & Basic Movement</h2>
+                <div class="section-content">
+                    <h2>How It Works</h2>
                     <div class="implementation-content">
-                        <p>Our teleoperation implementation used the WASD keys for intuitive control:</p>
-                        <p><strong>Keyboard Control:</strong> We mapped "W" for forward movement, "A" for counterclockwise rotation, "S" for backward movement, and "D" for clockwise rotation. Early testing revealed that the robot wouldn't stop when keys were released, requiring us to implement explicit stop commands triggered by any other key press.</p>
-                        <p><strong>Square Driving:</strong> For programmed movements, we implemented a loop with sleep commands that alternated between forward motion and 90° turns. After discovering that the robot would continue its previous movement while starting the next command, we added explicit stop commands with 0.5-second pauses between movements to ensure clean transitions.</p>
-                    </div>
-                </div>
-                
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Advanced Behaviors</h2>
-                        <div class="implementation-content">
-                            <p>Our more sophisticated implementations employed sensor processing and control theory:</p>
-                            <p><strong>Wall Following:</strong> We implemented a wall-following algorithm that used the minimum laser scan value from the right half of the robot's LIDAR array (elements 180-359) to determine distance to the wall. A PID controller from the simple-pid library maintained a constant 1.0-meter distance from the wall, adjusting the angular velocity to steer toward or away from the wall as needed.</p>
-                            <p><strong>Person Following:</strong> For this behavior, we combined object detection (by finding the centroid of non-infinite LIDAR points) with position tracking. The algorithm calculated the global position of the detected object and used a PID controller to steer the robot toward that position while maintaining an appropriate following distance.</p>
-                            <p><strong>Obstacle Avoidance:</strong> This system combined odometry data with LIDAR scans to navigate toward a target while avoiding obstacles. The algorithm created vectors pointing away from detected obstacles (weighted by proximity) and combined them with the target direction vector to determine the optimal path.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/neato-state-transition.png" alt="Neato State Transition">
-                        <p class="image-caption">Neato State Transition</p>
+                        <p>Our teleoperation implementation used the WASD keys for intuitive control, mapping "W" for forward movement, "A" for counterclockwise rotation, "S" for backward movement, and "D" for clockwise rotation. Early testing revealed that the robot wouldn't stop when keys were released, requiring us to implement explicit stop commands triggered by any other key press. For programmed movements, we implemented a loop with sleep commands that alternated between forward motion and 90° turns, adding explicit stop commands with 0.5-second pauses between movements to ensure clean transitions.</p>
+                        <p>Our more sophisticated implementations employed sensor processing and control theory. The wall-following algorithm used the minimum laser scan value from the right half of the robot's LIDAR array (elements 180-359) to determine distance to the wall, with a PID controller maintaining a constant 1.0-meter distance from the wall. For person following, we combined object detection by finding the centroid of non-infinite LIDAR points with position tracking, calculating the global position of the detected object and using a PID controller to steer the robot toward that position while maintaining an appropriate following distance.</p>
+                        <p>The obstacle avoidance system combined odometry data with LIDAR scans to navigate toward a target while avoiding obstacles. The algorithm created vectors pointing away from detected obstacles weighted by proximity and combined them with the target direction vector to determine the optimal path. This approach enabled the robot to navigate complex environments while maintaining its intended trajectory.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Finite State Machine Section -->
-        <section class="case-study-users">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <h2>Finite State Control</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>State Machine Design</h3>
-                        <ul>
-                            <li>Combined object following and wall following behaviors</li>
-                            <li>Designed to drive up to a cylindrical object, align to it, and circle around it</li>
-                            <li>Implemented state transitions based on object detection and proximity</li>
-                            <li>Created smooth transitions between different behavior modes</li>
-                            <li>Incorporated safety features to stop the robot when no object is detected</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Behavior Switching Logic</h3>
-                        <ul>
-                            <li>No object detected → Stop motors</li>
-                            <li>Object detected & distance > 1.1m → Object following</li>
-                            <li>Object detected & distance < 1.1m → Turn 90° left, then wall following</li>
-                            <li>Each state used dedicated control algorithms optimized for the specific task</li>
-                            <li>Transition conditions based on real-time sensor feedback</li>
-                        </ul>
+                <div class="section-image">
+                    <img src="assets/images/neato-state-transition.png" alt="Neato State Transition" style="width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Neato State Transition Diagram</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Finite State Control</h2>
+                    <div class="implementation-content">
+                        <p>The finite state machine combined object following and wall following behaviors, designed to drive up to a cylindrical object, align to it, and circle around it. The system implemented state transitions based on object detection and proximity, creating smooth transitions between different behavior modes while incorporating safety features to stop the robot when no object is detected.</p>
+                        <p>The behavior switching logic operated on clear conditions: when no object was detected, the robot stopped its motors; when an object was detected at a distance greater than 1.1 meters, the robot engaged object following mode; and when an object was detected at a distance less than 1.1 meters, the robot would turn 90 degrees left and then engage wall following mode. Each state used dedicated control algorithms optimized for the specific task, with transition conditions based on real-time sensor feedback.</p>
                     </div>
                 </div>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Wall Following Results</h3>
-                        <ul>
-                            <li>Successfully followed walls at a constant 1-meter distance</li>
-                            <li>Handled both inside and outside corners effectively</li>
-                            <li>Capable of steering 180° around protruding walls</li>
-                            <li>PID controller prevented oscillations common in simpler proportional controllers</li>
-                            <li>Demonstrated reliable performance in the simulated maze environment</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Person Following Results</h3>
-                        <ul>
-                            <li>Accurately detected and tracked object position in global coordinates</li>
-                            <li>Steered smoothly toward the tracked object</li>
-                            <li>Adjusted speed based on distance to target</li>
-                            <li>Successfully stopped at appropriate distance from the object</li>
-                            <li>Performed reliably when object detection was active</li>
-                        </ul>
+            </div>
+        </section>
+
+        <!-- Performance Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Performance Results</h2>
+                    <div class="implementation-content">
+                        <p>The wall following system successfully followed walls at a constant 1-meter distance, handling both inside and outside corners effectively. The robot was capable of steering 180 degrees around protruding walls, with the PID controller preventing oscillations common in simpler proportional controllers. The system demonstrated reliable performance in the simulated maze environment, proving the effectiveness of the control algorithms.</p>
+                        <p>The person following behavior accurately detected and tracked object position in global coordinates, steering smoothly toward the tracked object while adjusting speed based on distance to target. The robot successfully stopped at appropriate distances from objects and performed reliably when object detection was active. The combination of these behaviors created a robust autonomous navigation system capable of complex interactions with its environment.</p>
                     </div>
                 </div>
             </div>

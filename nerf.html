@@ -22,7 +22,7 @@
                         <span class="case-study-category">Computer Vision & Robotics</span>
                     </div>
                     <h1>Sentry Nerf Gun</h1>
-                    <p class="case-study-description">Developing a computer vision system for autonomous target acquisition and tracking, creating an intelligent platform that can identify and engage targets in real-time.</p>
+                    <p class="case-study-description">A project integrating mechanical, electrical, and software systems to build a color- or face-tracking Nerf turret with real-time aiming and firing capabilities.</p>
                     <div class="github-container">
                         <a href="https://github.com/carlocolizzi/sentry-nerf" target="_blank" class="github-button">
                             <i class="fab fa-github"></i>
@@ -33,84 +33,49 @@
             </div>
         </section>
 
-        <!-- Overview Section -->
-        <section class="case-study-overview">
+        <!-- Challenge Section -->
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="overview-grid">
-                    <div class="overview-item">
-                        <h3>Detection Accuracy</h3>
-                        <div class="stat">95%</div>
-                        <p>Target detection in optimal conditions</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Response Time</h3>
-                        <div class="stat">200ms</div>
-                        <p>Average time from detection to aiming</p>
-                    </div>
-                    <div class="overview-item">
-                        <h3>Shooting Accuracy</h3>
-                        <div class="stat">85%</div>
-                        <p>Hit rate on moving targets at medium range</p>
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>The team aimed to create a mobile sentry gun that autonomously detects, tracks, and fires Nerf darts at targets—whether a specific color or a human face. This involved combining computer vision with a mechanical turret system to achieve real-time aiming and firing, plus an initial plan to mount it on a Neato robot vacuum for autonomous movement.</p>
+                        <p>Integrating mechanical, electrical, and software components proved more complex than anticipated, requiring careful balancing of ambition and feasibility. The project needed to coordinate multiple systems including computer vision processing, stepper motor control, and real-time target tracking while maintaining smooth movement and accurate aiming capabilities.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Traditional sentry guns face several limitations:</p>
-                            <ul>
-                                <li>Complex manual setup requirements</li>
-                                <li>Lack of autonomous target identification</li>
-                                <li>High costs limiting accessibility</li>
-                                <li>Inflexible targeting parameters</li>
-                                <li>Limited educational application potential</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/Nerf-axes.jpg" alt="Foundation System">
-                    </div>
+                <div class="section-image">
+                    <img src="assets/images/Nerf-axes.jpg" alt="Foundation System">
+                    <p class="image-caption">Custom Pan/Tilt Mechanism with Stepper Motors</p>
                 </div>
             </div>
         </section>
 
         <!-- Solution Section -->
-        <section class="case-study-solution">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid reverse">
-                    <div class="section-content">
-                        <h2>The Solution</h2>
-                        <div class="solution-content">
-                            <p>Development of a computer vision-based system that:</p>
-                            <ul>
-                                <li>Autonomously identifies human targets</li>
-                                <li>Tracks movement in real-time</li>
-                                <li>Uses affordable, accessible hardware</li>
-                                <li>Operates effectively in variable environments</li>
-                                <li>Provides a platform for educational exploration</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/Nerf-cam.jpg" alt="Computer Vision Process">
-                        <p class="image-caption">Computer Vision Detection System</p>
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We developed a functional turret prototype that successfully tracked colored objects or faces, aimed, and fired Nerf darts in real time. The solution featured two tracking modes: color-based detection for red objects and face detection using OpenCV, providing flexibility for different target types.</p>
+                        <p>The mechanical system consisted of a custom pan/tilt mechanism powered by two NEMA-17 stepper motors with a crossed-roller bearing for smooth, load-bearing rotation. The Nerf Stryfe gun required minimal permanent modifications, with a relay controlling the flywheel motors and one servo pulling the trigger for firing control.</p>
+                        <p>All actuators were unified under a single microcontroller (Raspberry Pi Pico), controlled via USB serial communication. This simplified the control architecture while maintaining precise coordination between the pan/tilt system and firing mechanism.</p>
                     </div>
                 </div>
-                <div class="mechanical-content">
-                    <p>The physical platform features a sophisticated mechanical system designed for precision and reliability:</p>
-                    <ul>
-                        <li>Dual-axis servo-controlled gimbal for precise aiming</li>
-                        <li>Custom-designed mounting brackets for stability</li>
-                        <li>Motorized trigger mechanism for remote activation</li>
-                        <li>Integrated camera mount aligned with the barrel</li>
-                        <li>All components designed to minimize mechanical play that could affect accuracy</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/Nerf-cam.jpg" alt="Computer Vision Process" style="width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Computer Vision Detection System</p>
                 </div>
             </div>
         </section>
@@ -118,44 +83,48 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Technical Implementation</h2>
-                        <div class="implementation-content">
-                            <p>The system utilizes a Raspberry Pi as the central processing unit, running Python-based computer vision algorithms through OpenCV. The camera feed is processed in real-time using a sophisticated detection pipeline.</p>
-                            <p>The detection process involves background subtraction to isolate moving objects, contour detection to identify human-shaped silhouettes, Kalman filtering for smooth target tracking, and decision algorithms to determine targeting priority.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/nerf-assembly-1.jpg" alt="Full Assembly">
-                        <p class="image-caption">Servo-Controlled Aiming Mechanism</p>
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>The system utilizes OpenCV for color masking and face detection, processing video feed in real-time to identify targets. When a target is detected, the system calculates its position and uses PD controllers for aiming precision, with specific gains to ensure smooth and accurate tracking.</p>
+                        <p>Coordinating two stepper motors simultaneously for diagonal aiming required sophisticated control algorithms. The solution employed an async I/O library to generate clean, coordinated PWM signals, significantly improving simultaneous stepper motor control and reducing jitter for smooth diagonal movements.</p>
+                        <p>Serial communication via USB integrates the computer vision processing with the turret controls, allowing the Raspberry Pi to send precise positioning commands to the Raspberry Pi Pico microcontroller, which then drives the stepper motors and firing mechanism accordingly.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Target Users Section -->
-        <section class="case-study-users">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <h2>Applications</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Educational Applications</h3>
-                        <ul>
-                            <li>Computer vision fundamentals</li>
-                            <li>Real-time control systems</li>
-                            <li>Embedded programming techniques</li>
-                            <li>Mechanical systems integration</li>
-                        </ul>
+                <div class="section-image">
+                    <img src="assets/images/nerf-assembly-1.jpg" alt="Full Assembly" style="width: 50%; height: auto; display: block; margin: 0 auto; border-radius: 15px;">
+                    <p class="image-caption">Servo-Controlled Aiming Mechanism</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenges Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="implementation-content">
+                        <p>Multiple face detections presented a significant challenge, as OpenCV often detected spurious "faces" in the background. The solution involved imposing a size threshold so only sufficiently large "faces" were tracked, effectively ignoring smaller false positives and improving target accuracy.</p>
+                        <p>Integration with ROS and the Neato vacuum proved cumbersome when attempting to run face/color recognition code on a Raspberry Pi while interfacing with ROS. The team decided not to focus on the Neato and ROS integration anymore, consolidating everything into one codebase for direct turret control, which simplified the overall system architecture.</p>
                     </div>
-                    <div class="user-group">
-                        <h3>Future Development</h3>
-                        <ul>
-                            <li>Enhanced target classification using machine learning</li>
-                            <li>Improved tracking algorithms for faster response</li>
-                            <li>More sophisticated decision-making for multi-target scenarios</li>
-                            <li>Energy optimization for extended operation</li>
-                        </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>Applications</h2>
+                    <div class="implementation-content">
+                        <p>The sentry gun project demonstrates effective integration of mechanical, electrical, and software components, serving as an excellent platform for educational exploration in computer vision fundamentals, real-time control systems, embedded programming techniques, and mechanical systems integration.</p>
+                        <p>Future development opportunities include reviving the Neato robot integration plan to mount the turret on a mobile base and utilize ROS for full autonomy. Additional improvements could involve more robust face detection through refined OpenCV parameters or alternative ML methods to reduce false positives, and optimizing code for standalone operation on a Raspberry Pi without requiring a laptop.</p>
                     </div>
                 </div>
             </div>

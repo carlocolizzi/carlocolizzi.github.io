@@ -57,60 +57,47 @@
         </section>
 
         <!-- Challenge Section -->
-        <section class="case-study-challenge">
+        <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>The Challenge</h2>
-                        <div class="challenge-content">
-                            <p>Creating a reliable and intuitive gesture-based control system presented several technical challenges:</p>
-                            <ul>
-                                <li>Implementing robust hand detection that works reliably in varying conditions</li>
-                                <li>Developing a system for training custom gesture recognition rather than relying on pre-trained models</li>
-                                <li>Creating intuitive mappings between gestures and robot behaviors</li>
-                                <li>Ensuring real-time processing with minimal latency for responsive control</li>
-                                <li>Designing advanced features like path drawing that translate hand movements into robot trajectories</li>
-                                <li>Integrating gesture recognition with ROS2 for reliable robot control</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/gestures-3.gif" alt="Gesture Recognition System">
+                <div class="section-content">
+                    <h2>The Challenge</h2>
+                    <div class="implementation-content">
+                        <p>Creating a reliable and intuitive gesture-based control system presented unique opportunities to explore human-robot interaction. The project required implementing robust hand detection that works reliably in varying conditions, developing a system for training custom gesture recognition rather than relying on pre-trained models, and creating intuitive mappings between gestures and robot behaviors.</p>
+                        <p>The system needed to ensure real-time processing with minimal latency for responsive control while designing advanced features like path drawing that translate hand movements into robot trajectories. Additionally, integrating gesture recognition with ROS2 for reliable robot control demanded careful coordination between computer vision processing and robotic control systems to create a seamless user experience.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Solution Section -->
-        <section class="case-study-solution">
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
             <div class="container">
-                <div class="section-grid reverse">
-                    <div class="section-content">
-                        <h2>The Solution</h2>
-                        <div class="solution-content">
-                            <p>We developed a comprehensive gesture recognition system using advanced computer vision techniques:</p>
-                            <ul>
-                                <li>Implemented MediaPipe for accurate hand detection and tracking of key points (fingertips, knuckles)</li>
-                                <li>Created a custom training system for recognizing user-defined gestures</li>
-                                <li>Developed intuitive number-based gesture commands for basic robot control</li>
-                                <li>Implemented specific behavior algorithms triggered by different gestures</li>
-                                <li>Built a prototype path drawing feature that tracks finger movements to create custom robot paths</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/gestures-1.gif" alt="Hand Tracking System">
-                        <p class="image-caption">MediaPipe hand tracking visualization</p>
+                <div class="section-image">
+                    <img src="assets/images/gestures-3.gif" alt="Gesture Recognition System">
+                    <p class="image-caption">Gesture Recognition System in Action</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>The Solution</h2>
+                    <div class="implementation-content">
+                        <p>We developed a comprehensive gesture recognition system using advanced computer vision techniques. The system implemented MediaPipe for accurate hand detection and tracking of key points including fingertips and knuckles, created a custom training system for recognizing user-defined gestures, and developed intuitive number-based gesture commands for basic robot control. The solution also implemented specific behavior algorithms triggered by different gestures and built a prototype path drawing feature that tracks finger movements to create custom robot paths.</p>
+                        <p>Our approach to gesture control focused on user-friendliness and system extensibility. We used MediaPipe's hand landmark detection to identify 21 key points on each hand, implemented custom gesture training where users could create their own gesture dataset, and designed a speed control system that uses the distance between thumb and index finger as a variable control. The system created an integrated solution where the robot responds to gestures in real-time via ROS2 communication, enabling seamless interaction between human gestures and robotic behaviors.</p>
                     </div>
                 </div>
-                <div class="mechanical-content">
-                    <p>Our approach to gesture control focused on user-friendliness and system extensibility:</p>
-                    <ul>
-                        <li>Used MediaPipe's hand landmark detection to identify 21 key points on each hand</li>
-                        <li>Implemented custom gesture training where users could create their own gesture dataset</li>
-                        <li>Designed a speed control system that uses the distance between thumb and index finger as a variable control</li>
-                        <li>Created an integrated system where the robot responds to gestures in real-time via ROS2 communication</li>
-                    </ul>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/gestures-1.gif" alt="Hand Tracking System">
+                    <p class="image-caption">MediaPipe Hand Tracking Visualization</p>
                 </div>
             </div>
         </section>
@@ -118,95 +105,48 @@
         <!-- Implementation Section -->
         <section class="case-study-implementation">
             <div class="container">
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Gesture Recognition System</h2>
-                        <div class="implementation-content">
-                            <p>Our implementation went through several distinct development phases:</p>
-                            <p><strong>Tool Selection:</strong> After evaluating various computer vision libraries, we chose MediaPipe for its robust hand detection capabilities. MediaPipe provided pre-built functionalities for identifying and tracking hands, including detailed finger position data that was essential for our gesture recognition system.</p>
-                            <p><strong>Custom Gesture Training:</strong> Rather than using pre-trained models limited to standard gestures, we implemented a system that allowed us to create and train recognition for custom gestures. This involved capturing images of our gestures in real-time and using them to build a custom dataset for machine learning-based recognition.</p>
-                            <p><strong>Behavior Integration:</strong> We mapped specific gestures to robot behaviors, initially using random gesture assignments before transitioning to a more intuitive number-based system for better usability.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/gestures-2.gif" alt="Number Gesture System">
-                        <p class="image-caption">Number-based gesture control system</p>
+                <div class="section-content">
+                    <h2>How It Works</h2>
+                    <div class="implementation-content">
+                        <p>Our implementation went through several distinct development phases. After evaluating various computer vision libraries, we chose MediaPipe for its robust hand detection capabilities, which provided pre-built functionalities for identifying and tracking hands, including detailed finger position data essential for our gesture recognition system. Rather than using pre-trained models limited to standard gestures, we implemented a system that allowed us to create and train recognition for custom gestures, involving capturing images of our gestures in real-time and using them to build a custom dataset for machine learning-based recognition.</p>
+                        <p>We mapped specific gestures to robot behaviors, initially using random gesture assignments before transitioning to a more intuitive number-based system for better usability. The gesture control system evolved from basic commands to more sophisticated interactions, with movement control using the robot's odometry to create consistent patterns rather than time-based commands, leveraging the robot's positioning system to achieve precise movements and turns for driving in various shapes.</p>
+                        <p>The number gesture system used intuitive commands where each number triggered a specific robot behavior: Number 1 (pointer finger) for forward movement, Number 2 (peace sign) for turn right, Number 3 (three fingers) for turn left, Number 4 (four fingers) for stop, Number 0 (fist) for continuous spinning, open hand for drawing a square, triangle gesture for drawing a triangle, and thumb and index finger pinch for speed control with distance proportional to speed. We also began work on an advanced path drawing feature that would allow users to "draw" paths in the air for the robot to follow, involving tracking finger movement, recognizing the intended shape, and converting it to precise robot navigation commands.</p>
                     </div>
                 </div>
-                <div class="section-grid">
-                    <div class="section-content">
-                        <h2>Robot Control & Advanced Features</h2>
-                        <div class="implementation-content">
-                            <p>Our gesture control system evolved from basic commands to more sophisticated interactions:</p>
-                            <p><strong>Movement Control:</strong> We initially implemented basic movement controls using the robot's odometry to create consistent patterns. Rather than using time-based commands, we leveraged the robot's positioning system to achieve precise movements and turns for driving in various shapes.</p>
-                            <p><strong>Number Gesture System:</strong> We redesigned our gesture controls to use intuitive number-based commands, with each number triggering a specific robot behavior:</p>
-                            <ul>
-                                <li>Number 1 (pointer finger): Forward movement</li>
-                                <li>Number 2 (peace sign): Turn right</li>
-                                <li>Number 3 (three fingers): Turn left</li>
-                                <li>Number 4 (four fingers): Stop</li>
-                                <li>Number 0 (fist): Continuous spinning</li>
-                                <li>Open hand: Draw a square</li>
-                                <li>Triangle gesture: Draw a triangle</li>
-                                <li>Thumb and index finger pinch: Speed control (distance proportional to speed)</li>
-                            </ul>
-                            <p><strong>Path Drawing Prototype:</strong> We began work on an advanced feature that would allow users to "draw" paths in the air for the robot to follow. This involved tracking finger movement, recognizing the intended shape, and converting it to precise robot navigation commands.</p>
-                        </div>
-                    </div>
-                    <div class="section-image">
-                        <img src="assets/images/gestures-4.gif" alt="Path Drawing Feature">
-                        <p class="image-caption">Path drawing prototype visualization</p>
+            </div>
+        </section>
+
+        <!-- Image Section -->
+        <section class="image-section" style="margin-bottom: 4rem;">
+            <div class="container">
+                <div class="section-image">
+                    <img src="assets/images/gestures-2.gif" alt="Number Gesture System">
+                    <p class="image-caption">Number-Based Gesture Control System</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="case-study-implementation">
+            <div class="container">
+                <div class="section-content">
+                    <h2>System Performance</h2>
+                    <div class="implementation-content">
+                        <p>The gesture control system successfully implemented a working solution for the Neato robot, achieving reliable recognition of multiple distinct hand gestures and creating intuitive mappings between gestures and robot behaviors. The system developed a functional prototype for custom gesture training and established a foundation for future development of path drawing functionality, demonstrating the practical application of computer vision techniques for hand detection and tracking.</p>
+                        <p>The implementation showcased machine learning approaches for custom gesture recognition, ROS2 integration for translating gesture commands to robot actions, and real-time processing optimization for responsive control. The project provided valuable insights into human-robot interaction design principles for intuitive interfaces, proving that gesture-based control could serve as an effective alternative to traditional robotic interfaces.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Future Development Section -->
-        <section class="case-study-users">
+        <section class="case-study-implementation">
             <div class="container">
-                <h2>Future Development</h2>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Path Drawing Enhancement</h3>
-                        <ul>
-                            <li>Waypoint-based drawing system to create more precise paths</li>
-                            <li>Recognition of pauses in finger movement to mark corner points</li>
-                            <li>Support for multiple path geometries (lines, zigzags, shapes)</li>
-                            <li>Translation of detected paths into precise robot movement commands</li>
-                            <li>Improved curve handling and path smoothing algorithms</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>System Improvements</h3>
-                        <ul>
-                            <li>Enhanced gesture recognition accuracy in varied lighting conditions</li>
-                            <li>Implementation of more sophisticated gesture combinations</li>
-                            <li>User-specific gesture calibration and preferences</li>
-                            <li>Integration with other robot capabilities (mapping, object interaction)</li>
-                            <li>Expansion of the gesture vocabulary for more complex commands</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="users-content">
-                    <div class="user-group">
-                        <h3>Results & Achievements</h3>
-                        <ul>
-                            <li>Successfully implemented a working gesture control system for the Neato robot</li>
-                            <li>Achieved reliable recognition of multiple distinct hand gestures</li>
-                            <li>Created intuitive mappings between gestures and robot behaviors</li>
-                            <li>Developed a functional prototype for custom gesture training</li>
-                            <li>Established a foundation for future development of path drawing functionality</li>
-                        </ul>
-                    </div>
-                    <div class="user-group">
-                        <h3>Technical Learnings</h3>
-                        <ul>
-                            <li>Computer vision techniques for hand detection and tracking</li>
-                            <li>Machine learning approaches for custom gesture recognition</li>
-                            <li>ROS2 integration for translating gesture commands to robot actions</li>
-                            <li>Real-time processing optimization for responsive control</li>
-                            <li>Human-robot interaction design principles for intuitive interfaces</li>
-                        </ul>
+                <div class="section-content">
+                    <h2>Future Development</h2>
+                    <div class="implementation-content">
+                        <p>Future enhancements could include a waypoint-based drawing system to create more precise paths, recognition of pauses in finger movement to mark corner points, and support for multiple path geometries including lines, zigzags, and shapes. The system could benefit from improved curve handling and path smoothing algorithms, enhanced gesture recognition accuracy in varied lighting conditions, and implementation of more sophisticated gesture combinations.</p>
+                        <p>Additional improvements might involve user-specific gesture calibration and preferences, integration with other robot capabilities such as mapping and object interaction, and expansion of the gesture vocabulary for more complex commands. The translation of detected paths into precise robot movement commands would complete the path drawing functionality, creating a comprehensive gesture-based control system for advanced robotic applications.</p>
                     </div>
                 </div>
             </div>
