@@ -291,7 +291,7 @@ nav .container {
     border-radius: 16px;
     overflow: hidden;
     margin-top: 1.5rem;
-    height: 250px;
+    height: 300px;
     width: 100%;
     align-self: flex-end;
 }
@@ -547,7 +547,7 @@ footer .container {
     color: #fff;
     width: 44px;
     height: 44px;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -1169,7 +1169,7 @@ p.results {
     }
 
     .case-study-image {
-        height: 140px;
+        height: 170px;
         margin-top: 1rem;
         border-radius: 8px;
         flex-shrink: 0;
@@ -1349,9 +1349,9 @@ p.results {
         line-height: 1.5;
     }
 
-    .case-study-hero {
+    .case-study-page .case-study-hero {
         min-height: 70vh;
-        padding: 60px 0;
+        padding: 120px 0 60px 0;
     }
 
     .case-study-hero h1 {
@@ -1366,11 +1366,20 @@ p.results {
         margin-bottom: 2rem;
     }
 
-    .case-study-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-        margin-bottom: 1.5rem;
-        align-items: flex-start;
+    .case-study-page .case-study-meta {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 1rem 1.5rem;
+        z-index: 999;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .case-study-year {
@@ -1591,7 +1600,7 @@ p.results {
         }
 
         .case-study-image {
-            height: 120px;
+            height: 150px;
         }
 
         .metrics {
@@ -1600,6 +1609,10 @@ p.results {
         }
 
         /* Very small screen case study page improvements */
+        .case-study-page .case-study-hero {
+            padding: 120px 0 60px 0;
+        }
+        
         .case-study-hero h1 {
             font-size: 2rem;
         }
